@@ -1,0 +1,27 @@
+/* This file is for your main application css. */
+
+table {
+  border-collapse: collapse;
+  empty-cells: show;
+  margin: 25px auto;
+}
+
+td, th {
+  border: solid thin black;
+  width: 84px;
+  height: 42px;
+}
+
+/* Basic setup */
+input {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Glowing on focus */
+input:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}

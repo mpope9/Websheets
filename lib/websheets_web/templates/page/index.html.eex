@@ -1,0 +1,12 @@
+<div class="jumbotron">
+  <table>
+    <%= raw generate_header() %>
+    
+    <%= for key <- 0..3 do %>
+      <%= raw generate_front_cap("tr") <> 
+            generate_rows("td", 4, "#{key},") <> 
+            generate_end_cap("tr") 
+      %>
+    <% end %>
+  </table>
+</div>

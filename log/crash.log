@@ -1,0 +1,117 @@
+2018-12-16 20:28:11 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.542.0>
+    registered_name: []
+    exception exit: {{bad_return,{{'Elixir.Websheets.Application',start,[normal,[]]},{'EXIT',{undef,[{lasp,start_link,[],[]},{'Elixir.Websheets.Application',start,2,[{file,"lib/websheets/application.ex"},{line,18}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,277}]}]}}}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.541.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.543.0>,normal}]
+    links: [<0.541.0>,<0.43.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 230
+  neighbours:
+2018-12-16 20:28:24 =ERROR REPORT====
+Failed to start Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' in ranch_tcp:listen([{port,4000}]) for reason eaddrinuse (address already in use)
+2018-12-16 20:28:24 =SUPERVISOR REPORT====
+     Supervisor: {<0.455.0>,ranch_listener_sup}
+     Context:    start_error
+     Reason:     {listen_error,'Elixir.WebsheetsWeb.Endpoint.HTTP',eaddrinuse}
+     Offender:   [{pid,undefined},{id,ranch_acceptors_sup},{mfargs,{ranch_acceptors_sup,start_link,['Elixir.WebsheetsWeb.Endpoint.HTTP',100,ranch_tcp,[{max_connections,16384},{port,4000}]]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-12-16 20:28:24 =CRASH REPORT====
+  crasher:
+    initial call: supervisor:ranch_acceptors_sup/1
+    pid: <0.457.0>
+    registered_name: []
+    exception exit: {{listen_error,'Elixir.WebsheetsWeb.Endpoint.HTTP',eaddrinuse},[{ranch_acceptors_sup,listen_error,4,[{file,"/home/pope/Projects/websheets/deps/ranch/src/ranch_acceptors_sup.erl"},{line,58}]},{ranch_acceptors_sup,init,1,[{file,"/home/pope/Projects/websheets/deps/ranch/src/ranch_acceptors_sup.erl"},{line,37}]},{supervisor,init,1,[{file,"supervisor.erl"},{line,295}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.455.0>,'Elixir.WebsheetsWeb.Endpoint.Server','Elixir.WebsheetsWeb.Endpoint','Elixir.Websheets.Supervisor',<0.443.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.455.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 53695
+  neighbours:
+2018-12-16 20:28:24 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.WebsheetsWeb.Endpoint.Server'}
+     Context:    start_error
+     Reason:     {shutdown,{failed_to_start_child,ranch_acceptors_sup,{listen_error,'Elixir.WebsheetsWeb.Endpoint.HTTP',eaddrinuse}}}
+     Offender:   [{pid,undefined},{id,{ranch_listener_sup,'Elixir.WebsheetsWeb.Endpoint.HTTP'}},{mfargs,{'Elixir.Phoenix.Endpoint.CowboyHandler',start_link,[http,'Elixir.WebsheetsWeb.Endpoint',{ranch_listener_sup,start_link,['Elixir.WebsheetsWeb.Endpoint.HTTP',100,ranch_tcp,[{max_connections,16384},{port,4000}],cowboy_protocol,[{env,[{dispatch,[{'_',[],[{[<<"phoenix">>,<<"live_reload">>,<<"socket">>,<<"longpoll">>],[],'Elixir.Plug.Adapters.Cowboy.Handler',{'Elixir.Phoenix.Transports.LongPoll',{'Elixir.WebsheetsWeb.Endpoint','Elixir.Phoenix.LiveReloader.Socket',longpoll}}},{[<<"phoenix">>,<<"live_reload">>,<<"socket">>,<<"websocket">>],[],'Elixir.Phoenix.Endpoint.CowboyWebSocket',{'Elixir.Phoenix.Transports.WebSocket',{'Elixir.WebsheetsWeb.Endpoint','Elixir.Phoenix.LiveReloader.Socket',websocket}}},{[<<"socket">>,<<"websocket">>],[],'Elixir.Phoenix.Endpoint.CowboyWebSocket',{'Elixir.Phoenix.Transports.WebSocket',{'Elixir.WebsheetsWeb.Endpoint','Elixir.WebsheetsWeb.UserSocket',websocket}}},{'_',[],'Elixir.Plug.Adapters.Cowboy.Handler',{'Elixir.WebsheetsWeb.Endpoint',[]}}]}]}]},{onresponse,#Fun<Elixir.Plug.Cowboy.1.80559567>}]]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-12-19 21:22:51 =ERROR REPORT====
+** Generic server <0.570.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"client_update">>,join_ref => <<"1">>,payload => #{<<"body">> => <<"2">>,<<"input_id">> => <<"i1,0">>},ref => <<"2">>,topic => <<"spreadsheet:test">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.570.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:test">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.568.0>,vsn => <<"2.0.0">>}
+** Reason for termination == 
+** {function_clause,[{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,[<<"client_update">>,#{<<"body">> => <<"2">>,<<"input_id">> => <<"i1,0">>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.570.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => <<"2">>,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:test">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.568.0>,vsn => <<"2.0.0">>}],[{file,"lib/websheets_web/channels/update_channel.ex"},{line,15}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2018-12-19 21:22:52 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.570.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,[<<"client_update">>,#{<<"body">> => <<"2">>,<<"input_id">> => <<"i1,0">>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.570.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => <<"2">>,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:test">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.568.0>,vsn => <<"2.0.0">>}],[{file,"lib/websheets_web/channels/update_channel.ex"},{line,15}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.568.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.568.0>,<0.454.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 310744
+  neighbours:
+2018-12-19 21:24:28 =ERROR REPORT====
+** Generic server <0.570.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"client_update">>,join_ref => <<"1">>,payload => #{<<"body">> => <<>>,<<"input_id">> => <<"i0,1">>},ref => <<"2">>,topic => <<"spreadsheet:test">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.570.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:test">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.566.0>,vsn => <<"2.0.0">>}
+** Reason for termination == 
+** {function_clause,[{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,[<<"client_update">>,#{<<"body">> => <<>>,<<"input_id">> => <<"i0,1">>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.570.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => <<"2">>,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:test">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.566.0>,vsn => <<"2.0.0">>}],[{file,"lib/websheets_web/channels/update_channel.ex"},{line,15}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2018-12-19 21:24:28 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.570.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,[<<"client_update">>,#{<<"body">> => <<>>,<<"input_id">> => <<"i0,1">>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.570.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => <<"2">>,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:test">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.566.0>,vsn => <<"2.0.0">>}],[{file,"lib/websheets_web/channels/update_channel.ex"},{line,15}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.566.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.566.0>,<0.453.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 310665
+  neighbours:
+2018-12-19 21:24:31 =ERROR REPORT====
+** Generic server <0.573.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"client_update">>,join_ref => <<"3">>,payload => #{<<"body">> => <<"2">>,<<"input_id">> => <<"i0,1">>},ref => <<"4">>,topic => <<"spreadsheet:test">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.573.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:test">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.566.0>,vsn => <<"2.0.0">>}
+** Reason for termination == 
+** {function_clause,[{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,[<<"client_update">>,#{<<"body">> => <<"2">>,<<"input_id">> => <<"i0,1">>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.573.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => <<"4">>,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:test">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.566.0>,vsn => <<"2.0.0">>}],[{file,"lib/websheets_web/channels/update_channel.ex"},{line,15}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2018-12-19 21:24:31 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.573.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,[<<"client_update">>,#{<<"body">> => <<"2">>,<<"input_id">> => <<"i0,1">>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.573.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => <<"4">>,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:test">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.566.0>,vsn => <<"2.0.0">>}],[{file,"lib/websheets_web/channels/update_channel.ex"},{line,15}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.566.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.566.0>,<0.453.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 304367
+  neighbours:
