@@ -13,7 +13,7 @@ td, th {
 }
 
 /* Basic setup */
-input {
+.text_input {
   border: none;
   width: 100%;
   height: 100%;

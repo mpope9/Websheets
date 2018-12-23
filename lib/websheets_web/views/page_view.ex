@@ -29,7 +29,7 @@ defmodule WebsheetsWeb.PageView do
   def generate_rows(type, amount, id_prefix) do
     rows = for key <- 0..amount, into: "" do
       front_cap = generate_front_cap(type, @row_id_prefix <> id_prefix, key)
-      input_boxes = << "<input id=\"#{@input_id_prefix}#{id_prefix}#{key}\" type=\"text\"/>" >>
+      input_boxes = << "<input class=\"text_input\" id=\"#{@input_id_prefix}#{id_prefix}#{key}\" type=\"text\"/>" >>
       end_cap = generate_end_cap(type)
 
       front_cap <> input_boxes <> end_cap

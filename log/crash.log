@@ -115,3 +115,642 @@ Failed to start Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' in ranch_tcp:
     stack_size: 27
     reductions: 304367
   neighbours:
+2018-12-19 23:09:15 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.1836.0>
+    registered_name: []
+    exception exit: {{bad_return,{{'Elixir.Websheets.Application',start,[normal,[]]},{'EXIT',{undef,[{lasp,start_link,[],[]},{'Elixir.Websheets.Application',start,2,[{file,"lib/websheets/application.ex"},{line,18}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,277}]}]}}}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.1835.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.1837.0>,normal}]
+    links: [<0.1835.0>,<0.43.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-12-19 23:14:00 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.442.0>
+    registered_name: []
+    exception exit: {{bad_return,{{'Elixir.Websheets.Application',start,[normal,[]]},{'EXIT',{undef,[{lasp,start,[],[]},{'Elixir.Websheets.Application',start,2,[{file,"lib/websheets/application.ex"},{line,18}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,277}]}]}}}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.441.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.443.0>,normal}]
+    links: [<0.441.0>,<0.43.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-12-19 23:42:12 =ERROR REPORT====
+Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.601.0> exit with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 2,function => render,message => nil,module => 'Elixir.WebsheetsWeb.LaspView',reason => nil},[{'Elixir.WebsheetsWeb.LaspView',render,[<<"create.json">>,#{conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Adapters.Cowboy.Conn',{http_req,#Port<0.36>,ranch_tcp,keepalive,<0.601.0>,<<"GET">>,'HTTP/1.1',{{127,0,0,1},55124},<<"localhost">>,undefined,4000,<<"/api/create">>,undefined,<<>>,undefined,[],[{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>}],[{<<"connection">>,[<<"keep-alive">>]}],undefined,[],waiting,<<>>,undefined,false,waiting,[],<<>>,#Fun<Elixir.Plug.Cowboy.1.80559567>}},assigns => #{layout => false,new_table_id => {<<"1EbqdPQIlsoU4cYO9dXnAOXOezJ">>,{state_gmap,[state_lwwregister]}}},before_send => [#Fun<Elixir.Plug.Logger.1.112466771>,#Fun<Elixir.Phoenix.LiveReloader.0.61641163>],body_params => #{},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"GET">>,owner => <0.601.0>,params => #{},path_info => [<<"api">>,<<"create">>],path_params => #{},port => 4000,private => #{'Elixir.WebsheetsWeb.Router' => {[],#{}},phoenix_action => create,phoenix_controller => 'Elixir.WebsheetsWeb.LaspController',phoenix_endpoint => 'Elixir.WebsheetsWeb.Endpoint',phoenix_format => <<"json">>,phoenix_layout => {'Elixir.WebsheetsWeb.LayoutView',app},phoenix_pipelines => [api],phoenix_router => 'Elixir.WebsheetsWeb.Router',phoenix_template => <<"create.json">>,phoenix_view => 'Elixir.WebsheetsWeb.LaspView',plug_session_fetch => #Fun<Elixir.Plug.Session.1.58261320>},query_params => #{},query_string => <<>>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>}],request_path => <<"/api/create">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => <<"6h7rd6MjyQ+QEI/mfjBDEkoIQgytz2qGnqYXjgSaNSUv7kx4NasCJdLGUGt1fM+O">>,state => unset,status => nil},new_table_id => {<<"1EbqdPQIlsoU4cYO9dXnAOXOezJ">>,{state_gmap,[state_lwwregister]}},view_module => 'Elixir.WebsheetsWeb.LaspView',view_template => <<"create.json">>}],[]},{'Elixir.Phoenix.View',render_to_iodata,3,[{file,"lib/phoenix/view.ex"},{line,332}]},{'Elixir.Phoenix.Controller',do_render,4,[{file,"lib/phoenix/controller.ex"},{line,740}]},{'Elixir.WebsheetsWeb.LaspController',action,2,[{file,"lib/websheets_web/controllers/lasp_controller.ex"},{line,1}]},{'Elixir.WebsheetsWeb.LaspController',phoenix_controller_pipeline,2,[{file,"lib/websheets_web/controllers/lasp_controller.ex"},{line,1}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.Phoenix.Router','__call__',1,[{file,"lib/phoenix/router.ex"},{line,278}]},{'Elixir.WebsheetsWeb.Endpoint',plug_builder_call,2,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.WebsheetsWeb.Endpoint','call (overridable 3)',2,[{file,"lib/plug/debugger.ex"},{line,122}]},{'Elixir.WebsheetsWeb.Endpoint',call,2,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.Plug.Adapters.Cowboy.Handler',upgrade,4,[{file,"lib/plug/cowboy/handler.ex"},{line,18}]},{cowboy_protocol,execute,4,[{file,"/home/pope/Projects/Websheets/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.WebsheetsWeb.Endpoint',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Adapters.Cowboy.Conn',{http_req,#Port<0.36>,ranch_tcp,keepalive,<0.601.0>,<<"GET">>,'HTTP/1.1',{{127,0,0,1},55124},<<"localhost">>,undefined,4000,<<"/api/create">>,undefined,<<>>,undefined,[],[{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>}],[{<<"connection">>,[<<"keep-alive">>]}],undefined,[],waiting,<<>>,undefined,false,waiting,[],<<>>,#Fun<Elixir.Plug.Cowboy.1.80559567>}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"GET">>,owner => <0.601.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"api">>,<<"create">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<>>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>}],request_path => <<"/api/create">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}}
+2018-12-19 23:43:15 =ERROR REPORT====
+Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.613.0> exit with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 2,function => render,message => nil,module => 'Elixir.WebsheetsWeb.LaspView',reason => nil},[{'Elixir.WebsheetsWeb.LaspView',render,[<<"create.json">>,#{conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Adapters.Cowboy.Conn',{http_req,#Port<0.39>,ranch_tcp,keepalive,<0.613.0>,<<"GET">>,'HTTP/1.1',{{127,0,0,1},55130},<<"localhost">>,undefined,4000,<<"/api/create">>,undefined,<<>>,undefined,[],[{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>},{<<"cache-control">>,<<"max-age=0">>}],[{<<"connection">>,[<<"keep-alive">>]}],undefined,[],waiting,<<>>,undefined,false,waiting,[],<<>>,#Fun<Elixir.Plug.Cowboy.1.80559567>}},assigns => #{layout => false,new_table_id => {<<"1EbqlG3DQCT8XT0rHHzvHQAA7SF">>,{state_gmap,[state_lwwregister]}}},before_send => [#Fun<Elixir.Plug.Logger.1.112466771>,#Fun<Elixir.Phoenix.LiveReloader.0.61641163>],body_params => #{},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"GET">>,owner => <0.613.0>,params => #{},path_info => [<<"api">>,<<"create">>],path_params => #{},port => 4000,private => #{'Elixir.WebsheetsWeb.Router' => {[],#{}},phoenix_action => create,phoenix_controller => 'Elixir.WebsheetsWeb.LaspController',phoenix_endpoint => 'Elixir.WebsheetsWeb.Endpoint',phoenix_format => <<"json">>,phoenix_layout => {'Elixir.WebsheetsWeb.LayoutView',app},phoenix_pipelines => [api],phoenix_router => 'Elixir.WebsheetsWeb.Router',phoenix_template => <<"create.json">>,phoenix_view => 'Elixir.WebsheetsWeb.LaspView',plug_session_fetch => #Fun<Elixir.Plug.Session.1.58261320>},query_params => #{},query_string => <<>>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>},{<<"cache-control">>,<<"max-age=0">>}],request_path => <<"/api/create">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => <<"6h7rd6MjyQ+QEI/mfjBDEkoIQgytz2qGnqYXjgSaNSUv7kx4NasCJdLGUGt1fM+O">>,state => unset,status => nil},new_table_id => {<<"1EbqlG3DQCT8XT0rHHzvHQAA7SF">>,{state_gmap,[state_lwwregister]}},view_module => 'Elixir.WebsheetsWeb.LaspView',view_template => <<"create.json">>}],[]},{'Elixir.Phoenix.View',render_to_iodata,3,[{file,"lib/phoenix/view.ex"},{line,332}]},{'Elixir.Phoenix.Controller',do_render,4,[{file,"lib/phoenix/controller.ex"},{line,740}]},{'Elixir.WebsheetsWeb.LaspController',action,2,[{file,"lib/websheets_web/controllers/lasp_controller.ex"},{line,1}]},{'Elixir.WebsheetsWeb.LaspController',phoenix_controller_pipeline,2,[{file,"lib/websheets_web/controllers/lasp_controller.ex"},{line,1}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.Phoenix.Router','__call__',1,[{file,"lib/phoenix/router.ex"},{line,278}]},{'Elixir.WebsheetsWeb.Endpoint',plug_builder_call,2,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.WebsheetsWeb.Endpoint','call (overridable 3)',2,[{file,"lib/plug/debugger.ex"},{line,122}]},{'Elixir.WebsheetsWeb.Endpoint',call,2,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.Plug.Adapters.Cowboy.Handler',upgrade,4,[{file,"lib/plug/cowboy/handler.ex"},{line,18}]},{cowboy_protocol,execute,4,[{file,"/home/pope/Projects/Websheets/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.WebsheetsWeb.Endpoint',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Adapters.Cowboy.Conn',{http_req,#Port<0.39>,ranch_tcp,keepalive,<0.613.0>,<<"GET">>,'HTTP/1.1',{{127,0,0,1},55130},<<"localhost">>,undefined,4000,<<"/api/create">>,undefined,<<>>,undefined,[],[{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>},{<<"cache-control">>,<<"max-age=0">>}],[{<<"connection">>,[<<"keep-alive">>]}],undefined,[],waiting,<<>>,undefined,false,waiting,[],<<>>,#Fun<Elixir.Plug.Cowboy.1.80559567>}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"GET">>,owner => <0.613.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"api">>,<<"create">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<>>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>},{<<"cache-control">>,<<"max-age=0">>}],request_path => <<"/api/create">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}}
+2018-12-19 23:43:21 =ERROR REPORT====
+Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.627.0> exit with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 2,function => render,message => nil,module => 'Elixir.WebsheetsWeb.LaspView',reason => nil},[{'Elixir.WebsheetsWeb.LaspView',render,[<<"create.json">>,#{conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Adapters.Cowboy.Conn',{http_req,#Port<0.42>,ranch_tcp,keepalive,<0.627.0>,<<"GET">>,'HTTP/1.1',{{127,0,0,1},55136},<<"localhost">>,undefined,4000,<<"/api/create">>,undefined,<<>>,undefined,[],[{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>}],[{<<"connection">>,[<<"keep-alive">>]}],undefined,[],waiting,<<>>,undefined,false,waiting,[],<<>>,#Fun<Elixir.Plug.Cowboy.1.80559567>}},assigns => #{layout => false,new_table_id => {<<"1Ebqm69cXs7AzC4IVRlaDR9ACzj">>,{state_gmap,[state_lwwregister]}}},before_send => [#Fun<Elixir.Plug.Logger.1.112466771>,#Fun<Elixir.Phoenix.LiveReloader.0.61641163>],body_params => #{},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"GET">>,owner => <0.627.0>,params => #{},path_info => [<<"api">>,<<"create">>],path_params => #{},port => 4000,private => #{'Elixir.WebsheetsWeb.Router' => {[],#{}},phoenix_action => create,phoenix_controller => 'Elixir.WebsheetsWeb.LaspController',phoenix_endpoint => 'Elixir.WebsheetsWeb.Endpoint',phoenix_format => <<"json">>,phoenix_layout => {'Elixir.WebsheetsWeb.LayoutView',app},phoenix_pipelines => [api],phoenix_router => 'Elixir.WebsheetsWeb.Router',phoenix_template => <<"create.json">>,phoenix_view => 'Elixir.WebsheetsWeb.LaspView',plug_session_fetch => #Fun<Elixir.Plug.Session.1.58261320>},query_params => #{},query_string => <<>>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>}],request_path => <<"/api/create">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => <<"6h7rd6MjyQ+QEI/mfjBDEkoIQgytz2qGnqYXjgSaNSUv7kx4NasCJdLGUGt1fM+O">>,state => unset,status => nil},new_table_id => {<<"1Ebqm69cXs7AzC4IVRlaDR9ACzj">>,{state_gmap,[state_lwwregister]}},view_module => 'Elixir.WebsheetsWeb.LaspView',view_template => <<"create.json">>}],[]},{'Elixir.Phoenix.View',render_to_iodata,3,[{file,"lib/phoenix/view.ex"},{line,332}]},{'Elixir.Phoenix.Controller',do_render,4,[{file,"lib/phoenix/controller.ex"},{line,740}]},{'Elixir.WebsheetsWeb.LaspController',action,2,[{file,"lib/websheets_web/controllers/lasp_controller.ex"},{line,1}]},{'Elixir.WebsheetsWeb.LaspController',phoenix_controller_pipeline,2,[{file,"lib/websheets_web/controllers/lasp_controller.ex"},{line,1}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.Phoenix.Router','__call__',1,[{file,"lib/phoenix/router.ex"},{line,278}]},{'Elixir.WebsheetsWeb.Endpoint',plug_builder_call,2,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.WebsheetsWeb.Endpoint','call (overridable 3)',2,[{file,"lib/plug/debugger.ex"},{line,122}]},{'Elixir.WebsheetsWeb.Endpoint',call,2,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.Plug.Adapters.Cowboy.Handler',upgrade,4,[{file,"lib/plug/cowboy/handler.ex"},{line,18}]},{cowboy_protocol,execute,4,[{file,"/home/pope/Projects/Websheets/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.WebsheetsWeb.Endpoint',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Adapters.Cowboy.Conn',{http_req,#Port<0.42>,ranch_tcp,keepalive,<0.627.0>,<<"GET">>,'HTTP/1.1',{{127,0,0,1},55136},<<"localhost">>,undefined,4000,<<"/api/create">>,undefined,<<>>,undefined,[],[{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>}],[{<<"connection">>,[<<"keep-alive">>]}],undefined,[],waiting,<<>>,undefined,false,waiting,[],<<>>,#Fun<Elixir.Plug.Cowboy.1.80559567>}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"GET">>,owner => <0.627.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"api">>,<<"create">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<>>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>}],request_path => <<"/api/create">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}}
+2018-12-19 23:44:50 =ERROR REPORT====
+Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.643.0> exit with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 2,function => render,message => nil,module => 'Elixir.WebsheetsWeb.LaspView',reason => nil},[{'Elixir.WebsheetsWeb.LaspView',render,[<<"create.json">>,#{conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Adapters.Cowboy.Conn',{http_req,#Port<0.45>,ranch_tcp,keepalive,<0.643.0>,<<"GET">>,'HTTP/1.1',{{127,0,0,1},55168},<<"localhost">>,undefined,4000,<<"/api/create">>,undefined,<<>>,undefined,[],[{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>},{<<"cache-control">>,<<"max-age=0">>}],[{<<"connection">>,[<<"keep-alive">>]}],undefined,[],waiting,<<>>,undefined,false,waiting,[],<<>>,#Fun<Elixir.Plug.Cowboy.1.80559567>}},assigns => #{layout => false,new_table_id => {<<"1EbqxFiBitQGV4YqY0pCQEaEjdX">>,{state_gmap,[state_lwwregister]}}},before_send => [#Fun<Elixir.Plug.Logger.1.112466771>,#Fun<Elixir.Phoenix.LiveReloader.0.61641163>],body_params => #{},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"GET">>,owner => <0.643.0>,params => #{},path_info => [<<"api">>,<<"create">>],path_params => #{},port => 4000,private => #{'Elixir.WebsheetsWeb.Router' => {[],#{}},phoenix_action => create,phoenix_controller => 'Elixir.WebsheetsWeb.LaspController',phoenix_endpoint => 'Elixir.WebsheetsWeb.Endpoint',phoenix_format => <<"json">>,phoenix_layout => {'Elixir.WebsheetsWeb.LayoutView',app},phoenix_pipelines => [api],phoenix_router => 'Elixir.WebsheetsWeb.Router',phoenix_template => <<"create.json">>,phoenix_view => 'Elixir.WebsheetsWeb.LaspView',plug_session_fetch => #Fun<Elixir.Plug.Session.1.58261320>},query_params => #{},query_string => <<>>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>},{<<"cache-control">>,<<"max-age=0">>}],request_path => <<"/api/create">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => <<"6h7rd6MjyQ+QEI/mfjBDEkoIQgytz2qGnqYXjgSaNSUv7kx4NasCJdLGUGt1fM+O">>,state => unset,status => nil},new_table_id => {<<"1EbqxFiBitQGV4YqY0pCQEaEjdX">>,{state_gmap,[state_lwwregister]}},view_module => 'Elixir.WebsheetsWeb.LaspView',view_template => <<"create.json">>}],[]},{'Elixir.Phoenix.View',render_to_iodata,3,[{file,"lib/phoenix/view.ex"},{line,332}]},{'Elixir.Phoenix.Controller',do_render,4,[{file,"lib/phoenix/controller.ex"},{line,740}]},{'Elixir.WebsheetsWeb.LaspController',action,2,[{file,"lib/websheets_web/controllers/lasp_controller.ex"},{line,1}]},{'Elixir.WebsheetsWeb.LaspController',phoenix_controller_pipeline,2,[{file,"lib/websheets_web/controllers/lasp_controller.ex"},{line,1}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.Phoenix.Router','__call__',1,[{file,"lib/phoenix/router.ex"},{line,278}]},{'Elixir.WebsheetsWeb.Endpoint',plug_builder_call,2,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.WebsheetsWeb.Endpoint','call (overridable 3)',2,[{file,"lib/plug/debugger.ex"},{line,122}]},{'Elixir.WebsheetsWeb.Endpoint',call,2,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.Plug.Adapters.Cowboy.Handler',upgrade,4,[{file,"lib/plug/cowboy/handler.ex"},{line,18}]},{cowboy_protocol,execute,4,[{file,"/home/pope/Projects/Websheets/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.WebsheetsWeb.Endpoint',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Adapters.Cowboy.Conn',{http_req,#Port<0.45>,ranch_tcp,keepalive,<0.643.0>,<<"GET">>,'HTTP/1.1',{{127,0,0,1},55168},<<"localhost">>,undefined,4000,<<"/api/create">>,undefined,<<>>,undefined,[],[{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>},{<<"cache-control">>,<<"max-age=0">>}],[{<<"connection">>,[<<"keep-alive">>]}],undefined,[],waiting,<<>>,undefined,false,waiting,[],<<>>,#Fun<Elixir.Plug.Cowboy.1.80559567>}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"GET">>,owner => <0.643.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"api">>,<<"create">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<>>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>},{<<"cache-control">>,<<"max-age=0">>}],request_path => <<"/api/create">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}}
+2018-12-19 23:48:49 =CRASH REPORT====
+  crasher:
+    initial call: gen_flow:init/4
+    pid: <0.582.0>
+    registered_name: []
+    exception error: {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [lasp_process_sup,lasp_sup,<0.377.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.583.0>,normal}]
+    links: [<0.430.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 348
+  neighbours:
+2018-12-19 23:48:49 =SUPERVISOR REPORT====
+     Supervisor: {local,lasp_process_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.582.0>},{id,gen_flow},{mfargs,{gen_flow,start_link,[lasp_process,1,[[{<<"test2">>,#Fun<lasp_process.2.33366935>}],#Fun<lasp_process.3.33366935>,{<0.425.0>,#Fun<lasp_process.4.33366935>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2018-12-19 23:48:49 =CRASH REPORT====
+  crasher:
+    initial call: gen_flow:init/4
+    pid: <0.584.0>
+    registered_name: []
+    exception error: {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [lasp_process_sup,lasp_sup,<0.377.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.585.0>,normal}]
+    links: [<0.430.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 315
+  neighbours:
+2018-12-19 23:48:49 =SUPERVISOR REPORT====
+     Supervisor: {local,lasp_process_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.584.0>},{id,gen_flow},{mfargs,{gen_flow,start_link,[lasp_process,1,[[{<<"test2">>,#Fun<lasp_process.2.33366935>}],#Fun<lasp_process.3.33366935>,{<0.425.0>,#Fun<lasp_process.4.33366935>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2018-12-19 23:48:49 =ERROR REPORT====
+** Generic server lasp_distribution_backend terminating 
+** Last message in was {query,<<"test2">>}
+** When Server state == {state,<0.427.0>,[],<<52,184,66,65,130,69,217,226,68,197,214,5,168,94,60,55,37,132,124,67>>}
+** Reason for termination == 
+** {{badmatch,{error,{function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}},[{lasp_distribution_backend,handle_call,3,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_distribution_backend.erl"},{line,506}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+** Client <0.562.0> stacktrace
+** [{gen,do_call,4,[{file,"gen.erl"},{line,169}]},{gen_server,call,3,[{file,"gen_server.erl"},{line,219}]},{erl_eval,do_apply,6,[{file,"erl_eval.erl"},{line,680}]},{elixir,eval_forms,4,[{file,"src/elixir.erl"},{line,265}]},{'Elixir.IEx.Evaluator',handle_eval,5,[{file,"lib/iex/evaluator.ex"},{line,249}]},{'Elixir.IEx.Evaluator',do_eval,3,[{file,"lib/iex/evaluator.ex"},{line,229}]},{'Elixir.IEx.Evaluator',eval,3,[{file,"lib/iex/evaluator.ex"},{line,207}]},{'Elixir.IEx.Evaluator',loop,1,[{file,"lib/iex/evaluator.ex"},{line,94}]},{'Elixir.IEx.Evaluator',init,4,[{file,"lib/iex/evaluator.ex"},{line,24}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]
+2018-12-19 23:48:49 =CRASH REPORT====
+  crasher:
+    initial call: gen_flow:init/4
+    pid: <0.586.0>
+    registered_name: []
+    exception error: {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [lasp_process_sup,lasp_sup,<0.377.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.587.0>,normal}]
+    links: [<0.430.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 315
+  neighbours:
+2018-12-19 23:48:49 =SUPERVISOR REPORT====
+     Supervisor: {local,lasp_process_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.586.0>},{id,gen_flow},{mfargs,{gen_flow,start_link,[lasp_process,1,[[{<<"test2">>,#Fun<lasp_process.2.33366935>}],#Fun<lasp_process.3.33366935>,{<0.425.0>,#Fun<lasp_process.4.33366935>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2018-12-19 23:48:49 =CRASH REPORT====
+  crasher:
+    initial call: gen_flow:init/4
+    pid: <0.588.0>
+    registered_name: []
+    exception error: {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [lasp_process_sup,lasp_sup,<0.377.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.589.0>,normal}]
+    links: [<0.430.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 315
+  neighbours:
+2018-12-19 23:48:49 =SUPERVISOR REPORT====
+     Supervisor: {local,lasp_process_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.588.0>},{id,gen_flow},{mfargs,{gen_flow,start_link,[lasp_process,1,[[{<<"test2">>,#Fun<lasp_process.2.33366935>}],#Fun<lasp_process.3.33366935>,{<0.425.0>,#Fun<lasp_process.4.33366935>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2018-12-19 23:48:49 =CRASH REPORT====
+  crasher:
+    initial call: gen_flow:init/4
+    pid: <0.590.0>
+    registered_name: []
+    exception error: {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [lasp_process_sup,lasp_sup,<0.377.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.591.0>,normal}]
+    links: [<0.430.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 315
+  neighbours:
+2018-12-19 23:48:49 =SUPERVISOR REPORT====
+     Supervisor: {local,lasp_process_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.590.0>},{id,gen_flow},{mfargs,{gen_flow,start_link,[lasp_process,1,[[{<<"test2">>,#Fun<lasp_process.2.33366935>}],#Fun<lasp_process.3.33366935>,{<0.425.0>,#Fun<lasp_process.4.33366935>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2018-12-19 23:48:49 =CRASH REPORT====
+  crasher:
+    initial call: gen_flow:init/4
+    pid: <0.592.0>
+    registered_name: []
+    exception error: {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [lasp_process_sup,lasp_sup,<0.377.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.593.0>,normal}]
+    links: [<0.430.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 315
+  neighbours:
+2018-12-19 23:48:49 =SUPERVISOR REPORT====
+     Supervisor: {local,lasp_process_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.592.0>},{id,gen_flow},{mfargs,{gen_flow,start_link,[lasp_process,1,[[{<<"test2">>,#Fun<lasp_process.2.33366935>}],#Fun<lasp_process.3.33366935>,{<0.425.0>,#Fun<lasp_process.4.33366935>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2018-12-19 23:48:49 =CRASH REPORT====
+  crasher:
+    initial call: gen_flow:init/4
+    pid: <0.594.0>
+    registered_name: []
+    exception error: {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [lasp_process_sup,lasp_sup,<0.377.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.595.0>,normal}]
+    links: [<0.430.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 315
+  neighbours:
+2018-12-19 23:48:49 =SUPERVISOR REPORT====
+     Supervisor: {local,lasp_process_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.594.0>},{id,gen_flow},{mfargs,{gen_flow,start_link,[lasp_process,1,[[{<<"test2">>,#Fun<lasp_process.2.33366935>}],#Fun<lasp_process.3.33366935>,{<0.425.0>,#Fun<lasp_process.4.33366935>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2018-12-19 23:48:49 =CRASH REPORT====
+  crasher:
+    initial call: gen_flow:init/4
+    pid: <0.596.0>
+    registered_name: []
+    exception error: {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [lasp_process_sup,lasp_sup,<0.377.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.597.0>,normal}]
+    links: [<0.430.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 315
+  neighbours:
+2018-12-19 23:48:49 =SUPERVISOR REPORT====
+     Supervisor: {local,lasp_process_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.596.0>},{id,gen_flow},{mfargs,{gen_flow,start_link,[lasp_process,1,[[{<<"test2">>,#Fun<lasp_process.2.33366935>}],#Fun<lasp_process.3.33366935>,{<0.425.0>,#Fun<lasp_process.4.33366935>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2018-12-19 23:48:49 =CRASH REPORT====
+  crasher:
+    initial call: gen_flow:init/4
+    pid: <0.598.0>
+    registered_name: []
+    exception error: {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [lasp_process_sup,lasp_sup,<0.377.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.599.0>,normal}]
+    links: [<0.430.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 315
+  neighbours:
+2018-12-19 23:48:49 =SUPERVISOR REPORT====
+     Supervisor: {local,lasp_process_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.598.0>},{id,gen_flow},{mfargs,{gen_flow,start_link,[lasp_process,1,[[{<<"test2">>,#Fun<lasp_process.2.33366935>}],#Fun<lasp_process.3.33366935>,{<0.425.0>,#Fun<lasp_process.4.33366935>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2018-12-19 23:48:49 =CRASH REPORT====
+  crasher:
+    initial call: gen_flow:init/4
+    pid: <0.600.0>
+    registered_name: []
+    exception error: {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [lasp_process_sup,lasp_sup,<0.377.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.601.0>,normal}]
+    links: [<0.430.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 315
+  neighbours:
+2018-12-19 23:48:49 =SUPERVISOR REPORT====
+     Supervisor: {local,lasp_process_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.600.0>},{id,gen_flow},{mfargs,{gen_flow,start_link,[lasp_process,1,[[{<<"test2">>,#Fun<lasp_process.2.33366935>}],#Fun<lasp_process.3.33366935>,{<0.425.0>,#Fun<lasp_process.4.33366935>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2018-12-19 23:48:49 =CRASH REPORT====
+  crasher:
+    initial call: gen_flow:init/4
+    pid: <0.602.0>
+    registered_name: []
+    exception error: {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [lasp_process_sup,lasp_sup,<0.377.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.603.0>,normal}]
+    links: [<0.430.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 315
+  neighbours:
+2018-12-19 23:48:49 =SUPERVISOR REPORT====
+     Supervisor: {local,lasp_process_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.602.0>},{id,gen_flow},{mfargs,{gen_flow,start_link,[lasp_process,1,[[{<<"test2">>,#Fun<lasp_process.2.33366935>}],#Fun<lasp_process.3.33366935>,{<0.425.0>,#Fun<lasp_process.4.33366935>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2018-12-19 23:48:49 =SUPERVISOR REPORT====
+     Supervisor: {local,lasp_process_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.602.0>},{id,gen_flow},{mfargs,{gen_flow,start_link,[lasp_process,1,[[{<<"test2">>,#Fun<lasp_process.2.33366935>}],#Fun<lasp_process.3.33366935>,{<0.425.0>,#Fun<lasp_process.4.33366935>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2018-12-19 23:48:49 =SUPERVISOR REPORT====
+     Supervisor: {local,lasp_sup}
+     Context:    child_terminated
+     Reason:     shutdown
+     Offender:   [{pid,<0.430.0>},{id,lasp_process_sup},{mfargs,{lasp_process_sup,start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-12-19 23:48:49 =CRASH REPORT====
+  crasher:
+    initial call: lasp_distribution_backend:init/1
+    pid: <0.425.0>
+    registered_name: lasp_distribution_backend
+    exception error: {{badmatch,{error,{function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}},[{lasp_distribution_backend,handle_call,3,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_distribution_backend.erl"},{line,506}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [lasp_sup,<0.377.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.427.0>,<0.429.0>,<0.378.0>]
+    dictionary: [{rand_seed,{#{jump => #Fun<rand.16.10897371>,max => 288230376151711743,next => #Fun<rand.15.10897371>,type => exsplus},[119253664845710391|96913802902123466]}}]
+    trap_exit: false
+    status: running
+    heap_size: 10958
+    stack_size: 27
+    reductions: 344903
+  neighbours:
+    neighbour: [{pid,<0.428.0>},{registered_name,lasp_ets_storage_backend},{initial_call,{lasp_ets_storage_backend,init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[lasp_storage_backend,lasp_distribution_backend,lasp_sup,<0.377.0>]},{message_queue_len,0},{links,[<0.427.0>]},{trap_exit,false},{status,waiting},{heap_size,610},{stack_size,10},{reductions,4706},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,403}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}]
+    neighbour: [{pid,<0.429.0>},{registered_name,lasp_state_based_synchronization_backend},{initial_call,{lasp_state_based_synchronization_backend,init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[lasp_distribution_backend,lasp_sup,<0.377.0>]},{message_queue_len,0},{links,[<0.425.0>]},{trap_exit,false},{status,waiting},{heap_size,376},{stack_size,10},{reductions,3041},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,403}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}]
+    neighbour: [{pid,<0.427.0>},{registered_name,lasp_storage_backend},{initial_call,{lasp_storage_backend,init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[lasp_distribution_backend,lasp_sup,<0.377.0>]},{message_queue_len,0},{links,[<0.425.0>,<0.428.0>]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,10},{reductions,5158},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,403}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}]
+2018-12-19 23:48:49 =SUPERVISOR REPORT====
+     Supervisor: {local,lasp_sup}
+     Context:    child_terminated
+     Reason:     {{badmatch,{error,{function_clause,[{lasp_core,query_var,[<<"test2">>,<0.427.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,354}]},{lasp_process,process,2,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_process.erl"},{line,201}]},{gen_flow,loop,3,[{file,"/home/pope/Projects/Websheets/deps/gen_flow/src/gen_flow.erl"},{line,174}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}},[{lasp_distribution_backend,handle_call,3,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_distribution_backend.erl"},{line,506}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.425.0>},{id,lasp_distribution_backend},{mfargs,{lasp_distribution_backend,start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-12-19 23:50:46 =ERROR REPORT====
+Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.560.0> exit with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 2,function => render,message => nil,module => 'Elixir.WebsheetsWeb.LaspView',reason => nil},[{'Elixir.WebsheetsWeb.LaspView',render,[<<"create.json">>,#{conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Adapters.Cowboy.Conn',{http_req,#Port<0.55>,ranch_tcp,keepalive,<0.560.0>,<<"GET">>,'HTTP/1.1',{{127,0,0,1},55304},<<"localhost">>,undefined,4000,<<"/api/create">>,undefined,<<>>,undefined,[],[{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>}],[{<<"connection">>,[<<"keep-alive">>]}],undefined,[],waiting,<<>>,undefined,false,waiting,[],<<>>,#Fun<Elixir.Plug.Cowboy.1.80559567>}},assigns => #{layout => false,new_table_id => <<"1Ebrg0UsfdDAnbfrmRKDP96y6Cu">>},before_send => [#Fun<Elixir.Plug.Logger.1.112466771>,#Fun<Elixir.Phoenix.LiveReloader.0.61641163>],body_params => #{},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"GET">>,owner => <0.560.0>,params => #{},path_info => [<<"api">>,<<"create">>],path_params => #{},port => 4000,private => #{'Elixir.WebsheetsWeb.Router' => {[],#{}},phoenix_action => create,phoenix_controller => 'Elixir.WebsheetsWeb.LaspController',phoenix_endpoint => 'Elixir.WebsheetsWeb.Endpoint',phoenix_format => <<"json">>,phoenix_layout => {'Elixir.WebsheetsWeb.LayoutView',app},phoenix_pipelines => [api],phoenix_router => 'Elixir.WebsheetsWeb.Router',phoenix_template => <<"create.json">>,phoenix_view => 'Elixir.WebsheetsWeb.LaspView',plug_session_fetch => #Fun<Elixir.Plug.Session.1.58261320>},query_params => #{},query_string => <<>>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>}],request_path => <<"/api/create">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => <<"6h7rd6MjyQ+QEI/mfjBDEkoIQgytz2qGnqYXjgSaNSUv7kx4NasCJdLGUGt1fM+O">>,state => unset,status => nil},new_table_id => <<"1Ebrg0UsfdDAnbfrmRKDP96y6Cu">>,view_module => 'Elixir.WebsheetsWeb.LaspView',view_template => <<"create.json">>}],[]},{'Elixir.Phoenix.View',render_to_iodata,3,[{file,"lib/phoenix/view.ex"},{line,332}]},{'Elixir.Phoenix.Controller',do_render,4,[{file,"lib/phoenix/controller.ex"},{line,740}]},{'Elixir.WebsheetsWeb.LaspController',action,2,[{file,"lib/websheets_web/controllers/lasp_controller.ex"},{line,1}]},{'Elixir.WebsheetsWeb.LaspController',phoenix_controller_pipeline,2,[{file,"lib/websheets_web/controllers/lasp_controller.ex"},{line,1}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.Phoenix.Router','__call__',1,[{file,"lib/phoenix/router.ex"},{line,278}]},{'Elixir.WebsheetsWeb.Endpoint',plug_builder_call,2,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.WebsheetsWeb.Endpoint','call (overridable 3)',2,[{file,"lib/plug/debugger.ex"},{line,122}]},{'Elixir.WebsheetsWeb.Endpoint',call,2,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.Plug.Adapters.Cowboy.Handler',upgrade,4,[{file,"lib/plug/cowboy/handler.ex"},{line,18}]},{cowboy_protocol,execute,4,[{file,"/home/pope/Projects/Websheets/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.WebsheetsWeb.Endpoint',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Adapters.Cowboy.Conn',{http_req,#Port<0.55>,ranch_tcp,keepalive,<0.560.0>,<<"GET">>,'HTTP/1.1',{{127,0,0,1},55304},<<"localhost">>,undefined,4000,<<"/api/create">>,undefined,<<>>,undefined,[],[{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>}],[{<<"connection">>,[<<"keep-alive">>]}],undefined,[],waiting,<<>>,undefined,false,waiting,[],<<>>,#Fun<Elixir.Plug.Cowboy.1.80559567>}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"GET">>,owner => <0.560.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"api">>,<<"create">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<>>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>}],request_path => <<"/api/create">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}}
+2018-12-19 23:51:03 =ERROR REPORT====
+Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.568.0> exit with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 2,function => render,message => nil,module => 'Elixir.WebsheetsWeb.LaspView',reason => nil},[{'Elixir.WebsheetsWeb.LaspView',render,[<<"create.json">>,#{conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Adapters.Cowboy.Conn',{http_req,#Port<0.58>,ranch_tcp,keepalive,<0.568.0>,<<"GET">>,'HTTP/1.1',{{127,0,0,1},55310},<<"localhost">>,undefined,4000,<<"/api/create">>,undefined,<<>>,undefined,[],[{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>},{<<"cache-control">>,<<"max-age=0">>}],[{<<"connection">>,[<<"keep-alive">>]}],undefined,[],waiting,<<>>,undefined,false,waiting,[],<<>>,#Fun<Elixir.Plug.Cowboy.1.80559567>}},assigns => #{layout => false,new_table_id => <<"1Ebri5bfk5gPBudalqMa4hbIk6H">>},before_send => [#Fun<Elixir.Plug.Logger.1.112466771>,#Fun<Elixir.Phoenix.LiveReloader.0.61641163>],body_params => #{},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"GET">>,owner => <0.568.0>,params => #{},path_info => [<<"api">>,<<"create">>],path_params => #{},port => 4000,private => #{'Elixir.WebsheetsWeb.Router' => {[],#{}},phoenix_action => create,phoenix_controller => 'Elixir.WebsheetsWeb.LaspController',phoenix_endpoint => 'Elixir.WebsheetsWeb.Endpoint',phoenix_format => <<"json">>,phoenix_layout => {'Elixir.WebsheetsWeb.LayoutView',app},phoenix_pipelines => [api],phoenix_router => 'Elixir.WebsheetsWeb.Router',phoenix_template => <<"create.json">>,phoenix_view => 'Elixir.WebsheetsWeb.LaspView',plug_session_fetch => #Fun<Elixir.Plug.Session.1.58261320>},query_params => #{},query_string => <<>>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>},{<<"cache-control">>,<<"max-age=0">>}],request_path => <<"/api/create">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => <<"6h7rd6MjyQ+QEI/mfjBDEkoIQgytz2qGnqYXjgSaNSUv7kx4NasCJdLGUGt1fM+O">>,state => unset,status => nil},new_table_id => <<"1Ebri5bfk5gPBudalqMa4hbIk6H">>,view_module => 'Elixir.WebsheetsWeb.LaspView',view_template => <<"create.json">>}],[]},{'Elixir.Phoenix.View',render_to_iodata,3,[{file,"lib/phoenix/view.ex"},{line,332}]},{'Elixir.Phoenix.Controller',do_render,4,[{file,"lib/phoenix/controller.ex"},{line,740}]},{'Elixir.WebsheetsWeb.LaspController',action,2,[{file,"lib/websheets_web/controllers/lasp_controller.ex"},{line,1}]},{'Elixir.WebsheetsWeb.LaspController',phoenix_controller_pipeline,2,[{file,"lib/websheets_web/controllers/lasp_controller.ex"},{line,1}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.Phoenix.Router','__call__',1,[{file,"lib/phoenix/router.ex"},{line,278}]},{'Elixir.WebsheetsWeb.Endpoint',plug_builder_call,2,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.WebsheetsWeb.Endpoint','call (overridable 3)',2,[{file,"lib/plug/debugger.ex"},{line,122}]},{'Elixir.WebsheetsWeb.Endpoint',call,2,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.Plug.Adapters.Cowboy.Handler',upgrade,4,[{file,"lib/plug/cowboy/handler.ex"},{line,18}]},{cowboy_protocol,execute,4,[{file,"/home/pope/Projects/Websheets/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.WebsheetsWeb.Endpoint',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Adapters.Cowboy.Conn',{http_req,#Port<0.58>,ranch_tcp,keepalive,<0.568.0>,<<"GET">>,'HTTP/1.1',{{127,0,0,1},55310},<<"localhost">>,undefined,4000,<<"/api/create">>,undefined,<<>>,undefined,[],[{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>},{<<"cache-control">>,<<"max-age=0">>}],[{<<"connection">>,[<<"keep-alive">>]}],undefined,[],waiting,<<>>,undefined,false,waiting,[],<<>>,#Fun<Elixir.Plug.Cowboy.1.80559567>}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"GET">>,owner => <0.568.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"api">>,<<"create">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<>>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>},{<<"cache-control">>,<<"max-age=0">>}],request_path => <<"/api/create">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}}
+2018-12-21 15:53:00 =ERROR REPORT====
+Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.560.0> exit with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {new_table_id,<<"1EgZoqXjE2T6LQM3ztFwXZkEb6Q">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison','encode!',2,[{file,"lib/poison.ex"},{line,41}]},{'Elixir.Phoenix.Controller',json,2,[{file,"lib/phoenix/controller.ex"},{line,284}]},{'Elixir.WebsheetsWeb.LaspController',action,2,[{file,"lib/websheets_web/controllers/lasp_controller.ex"},{line,1}]},{'Elixir.WebsheetsWeb.LaspController',phoenix_controller_pipeline,2,[{file,"lib/websheets_web/controllers/lasp_controller.ex"},{line,1}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.Phoenix.Router','__call__',1,[{file,"lib/phoenix/router.ex"},{line,278}]},{'Elixir.WebsheetsWeb.Endpoint',plug_builder_call,2,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.WebsheetsWeb.Endpoint','call (overridable 3)',2,[{file,"lib/plug/debugger.ex"},{line,122}]},{'Elixir.WebsheetsWeb.Endpoint',call,2,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{'Elixir.Plug.Adapters.Cowboy.Handler',upgrade,4,[{file,"lib/plug/cowboy/handler.ex"},{line,18}]},{cowboy_protocol,execute,4,[{file,"/home/pope/Projects/Websheets/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.WebsheetsWeb.Endpoint',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Adapters.Cowboy.Conn',{http_req,#Port<0.55>,ranch_tcp,keepalive,<0.560.0>,<<"GET">>,'HTTP/1.1',{{127,0,0,1},58238},<<"localhost">>,undefined,4000,<<"/api/create">>,undefined,<<>>,undefined,[],[{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>}],[{<<"connection">>,[<<"keep-alive">>]}],undefined,[],waiting,<<>>,undefined,false,waiting,[],<<>>,#Fun<Elixir.Plug.Cowboy.1.80559567>}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"GET">>,owner => <0.560.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"api">>,<<"create">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<>>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"host">>,<<"localhost:4000">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>}],request_path => <<"/api/create">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}}
+2018-12-22 14:40:44 =ERROR REPORT====
+** Generic server <0.787.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"client_update">>,join_ref => <<"1">>,payload => #{<<"body">> => <<"1">>,<<"input_id">> => <<"i0,0">>},ref => <<"2">>,topic => <<"spreadsheet:">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.787.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.780.0>,vsn => <<"2.0.0">>}
+** Reason for termination == 
+** {{aborted,{no_exists,[lasp_table,nil]}},[{mnesia,abort,1,[{file,"mnesia.erl"},{line,355}]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,22}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2018-12-22 14:40:45 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.787.0>
+    registered_name: []
+    exception exit: {{aborted,{no_exists,[lasp_table,nil]}},[{mnesia,abort,1,[{file,"mnesia.erl"},{line,355}]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,22}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.780.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.780.0>,<0.450.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 246384
+  neighbours:
+2018-12-22 14:42:48 =ERROR REPORT====
+** Generic server <0.568.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"client_update">>,join_ref => <<"8">>,payload => #{<<"body">> => <<"1">>,<<"input_id">> => <<"i0,0">>},ref => <<"9">>,topic => <<"spreadsheet:">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.568.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"8">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.566.0>,vsn => <<"2.0.0">>}
+** Reason for termination == 
+** {{aborted,{no_exists,[lasp_table,nil]}},[{mnesia,abort,1,[{file,"mnesia.erl"},{line,355}]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,22}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2018-12-22 14:42:48 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.568.0>
+    registered_name: []
+    exception exit: {{aborted,{no_exists,[lasp_table,nil]}},[{mnesia,abort,1,[{file,"mnesia.erl"},{line,355}]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,22}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.566.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.566.0>,<0.453.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 246391
+  neighbours:
+2018-12-22 14:45:07 =ERROR REPORT====
+** Generic server <0.589.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"client_update">>,join_ref => <<"1">>,payload => #{<<"body">> => <<"1">>,<<"input_id">> => <<"i0,0">>},ref => <<"2">>,topic => <<"spreadsheet:1EjGfx2JlUVX7oELq9rfDqwO1cQ">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.589.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:1EjGfx2JlUVX7oELq9rfDqwO1cQ">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.582.0>,vsn => <<"2.0.0">>}
+** Reason for termination == 
+** {{aborted,{no_exists,[lasp_table,nil]}},[{mnesia,abort,1,[{file,"mnesia.erl"},{line,355}]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,22}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2018-12-22 14:45:07 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.589.0>
+    registered_name: []
+    exception exit: {{aborted,{no_exists,[lasp_table,nil]}},[{mnesia,abort,1,[{file,"mnesia.erl"},{line,355}]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,22}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.582.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.582.0>,<0.441.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 246691
+  neighbours:
+2018-12-22 17:00:06 =ERROR REPORT====
+** Generic server <0.577.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"client_update">>,join_ref => <<"1">>,payload => #{<<"body">> => <<"1">>,<<"input_id">> => <<"i0,0">>},ref => <<"2">>,topic => <<"spreadsheet:1EjX6ARjwFF1IbaOmoL4EjYJoPb">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.577.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:1EjX6ARjwFF1IbaOmoL4EjYJoPb">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.570.0>,vsn => <<"2.0.0">>}
+** Reason for termination == 
+** {{aborted,{no_exists,[lasp_table,nil]}},[{mnesia,abort,1,[{file,"mnesia.erl"},{line,355}]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,22}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2018-12-22 17:00:06 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.577.0>
+    registered_name: []
+    exception exit: {{aborted,{no_exists,[lasp_table,nil]}},[{mnesia,abort,1,[{file,"mnesia.erl"},{line,355}]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,22}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.570.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.570.0>,<0.455.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 238670
+  neighbours:
+2018-12-22 17:04:15 =ERROR REPORT====
+** Generic server <0.595.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"client_update">>,join_ref => <<"1">>,payload => #{<<"body">> => <<"1">>,<<"input_id">> => <<"i0,0">>},ref => <<"2">>,topic => <<"spreadsheet:1EjXbOysJQrYGl3EFRLAtTnmvZx">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.595.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:1EjXbOysJQrYGl3EFRLAtTnmvZx">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.588.0>,vsn => <<"2.0.0">>}
+** Reason for termination == 
+** {{aborted,{no_exists,[lasp_table,nil]}},[{mnesia,abort,1,[{file,"mnesia.erl"},{line,355}]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,22}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2018-12-22 17:04:15 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.595.0>
+    registered_name: []
+    exception exit: {{aborted,{no_exists,[lasp_table,nil]}},[{mnesia,abort,1,[{file,"mnesia.erl"},{line,355}]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,22}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.588.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.588.0>,<0.470.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 254591
+  neighbours:
+2018-12-22 17:14:47 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.442.0>
+    registered_name: []
+    exception exit: {{bad_return,{{'Elixir.Websheets.Application',start,[normal,[]]},{'EXIT',{undef,[{mensia,start,[],[]},{'Elixir.Websheets.Application',create_database,0,[{file,"lib/websheets/application.ex"},{line,34}]},{'Elixir.Websheets.Application',start,2,[{file,"lib/websheets/application.ex"},{line,16}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,277}]}]}}}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.441.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.443.0>,normal}]
+    links: [<0.441.0>,<0.43.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 234
+  neighbours:
+2018-12-22 17:15:36 =ERROR REPORT====
+** Generic server <0.620.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"client_update">>,join_ref => <<"1">>,payload => #{<<"body">> => <<"1">>,<<"input_id">> => <<"i0,0">>},ref => <<"2">>,topic => <<"spreadsheet:1EjYyynxBLND3UZNL75HV56pMmy">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.620.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:1EjYyynxBLND3UZNL75HV56pMmy">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.613.0>,vsn => <<"2.0.0">>}
+** Reason for termination == 
+** {'function not exported',[{erlang,update_integer,[[monotonic,positive]],[]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,23}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2018-12-22 17:15:36 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.620.0>
+    registered_name: []
+    exception error: {undef,[{erlang,update_integer,[[monotonic,positive]],[]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,23}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.613.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.613.0>,<0.493.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 262429
+  neighbours:
+2018-12-22 17:16:38 =ERROR REPORT====
+** Generic server lasp_distribution_backend terminating 
+** Last message in was {update,[],{apply,nil,{set,2,nil}},<0.611.0>}
+** When Server state == {state,<0.428.0>,[],<<166,160,187,12,201,179,110,27,186,244,190,146,24,193,157,144,100,89,93,230>>}
+** Reason for termination == 
+** {function_clause,[{lasp_core,update,[[],{apply,nil,{set,2,nil}},<0.611.0>,#Fun<lasp_distribution_backend.47.56534003>,#Fun<lasp_distribution_backend.48.56534003>,<0.428.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,435}]},{lasp_distribution_backend,handle_call,3,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_distribution_backend.erl"},{line,603}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+** Client <0.611.0> stacktrace
+** [{gen,do_call,4,[{file,"gen.erl"},{line,169}]},{gen_server,call,3,[{file,"gen_server.erl"},{line,219}]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,24}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]
+2018-12-22 17:16:38 =CRASH REPORT====
+  crasher:
+    initial call: lasp_distribution_backend:init/1
+    pid: <0.426.0>
+    registered_name: lasp_distribution_backend
+    exception error: {function_clause,[{lasp_core,update,[[],{apply,nil,{set,2,nil}},<0.611.0>,#Fun<lasp_distribution_backend.47.56534003>,#Fun<lasp_distribution_backend.48.56534003>,<0.428.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,435}]},{lasp_distribution_backend,handle_call,3,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_distribution_backend.erl"},{line,603}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [lasp_sup,<0.378.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.428.0>,<0.430.0>,<0.379.0>]
+    dictionary: [{rand_seed,{#{jump => #Fun<rand.16.10897371>,max => 288230376151711743,next => #Fun<rand.15.10897371>,type => exsplus},[262143500464894233|242270508610257267]}}]
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 316815
+  neighbours:
+    neighbour: [{pid,<0.429.0>},{registered_name,lasp_ets_storage_backend},{initial_call,{lasp_ets_storage_backend,init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[lasp_storage_backend,lasp_distribution_backend,lasp_sup,<0.378.0>]},{message_queue_len,0},{links,[<0.428.0>]},{trap_exit,false},{status,waiting},{heap_size,376},{stack_size,10},{reductions,4348},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,403}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}]
+    neighbour: [{pid,<0.430.0>},{registered_name,lasp_state_based_synchronization_backend},{initial_call,{lasp_state_based_synchronization_backend,init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[lasp_distribution_backend,lasp_sup,<0.378.0>]},{message_queue_len,0},{links,[<0.426.0>]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,10},{reductions,528},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,403}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}]
+    neighbour: [{pid,<0.428.0>},{registered_name,lasp_storage_backend},{initial_call,{lasp_storage_backend,init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[lasp_distribution_backend,lasp_sup,<0.378.0>]},{message_queue_len,0},{links,[<0.426.0>,<0.429.0>]},{trap_exit,false},{status,waiting},{heap_size,376},{stack_size,10},{reductions,4587},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,403}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}]
+2018-12-22 17:16:38 =SUPERVISOR REPORT====
+     Supervisor: {local,lasp_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lasp_core,update,[[],{apply,nil,{set,2,nil}},<0.611.0>,#Fun<lasp_distribution_backend.47.56534003>,#Fun<lasp_distribution_backend.48.56534003>,<0.428.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,435}]},{lasp_distribution_backend,handle_call,3,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_distribution_backend.erl"},{line,603}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.426.0>},{id,lasp_distribution_backend},{mfargs,{lasp_distribution_backend,start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-12-22 17:16:38 =ERROR REPORT====
+** Generic server <0.611.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"client_update">>,join_ref => <<"5">>,payload => #{<<"body">> => <<"1">>,<<"input_id">> => <<"i0,0">>},ref => <<"6">>,topic => <<"spreadsheet:1EjYyynxBLND3UZNL75HV56pMmy">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.611.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"5">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:1EjYyynxBLND3UZNL75HV56pMmy">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.608.0>,vsn => <<"2.0.0">>}
+** Reason for termination == 
+** {{{function_clause,[{lasp_core,update,[[],{apply,nil,{set,2,nil}},<0.611.0>,#Fun<lasp_distribution_backend.47.56534003>,#Fun<lasp_distribution_backend.48.56534003>,<0.428.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,435}]},{lasp_distribution_backend,handle_call,3,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_distribution_backend.erl"},{line,603}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},{gen_server,call,[lasp_distribution_backend,{update,[],{apply,nil,{set,2,nil}},<0.611.0>},infinity]}},[{gen_server,call,3,[{file,"gen_server.erl"},{line,223}]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,24}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2018-12-22 17:16:38 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.611.0>
+    registered_name: []
+    exception exit: {{{function_clause,[{lasp_core,update,[[],{apply,nil,{set,2,nil}},<0.611.0>,#Fun<lasp_distribution_backend.47.56534003>,#Fun<lasp_distribution_backend.48.56534003>,<0.428.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,435}]},{lasp_distribution_backend,handle_call,3,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_distribution_backend.erl"},{line,603}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},{gen_server,call,[lasp_distribution_backend,{update,[],{apply,nil,{set,2,nil}},<0.611.0>},infinity]}},[{gen_server,call,3,[{file,"gen_server.erl"},{line,223}]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,24}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.608.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.608.0>,<0.495.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 358052
+  neighbours:
+2018-12-22 17:23:03 =ERROR REPORT====
+** Generic server lasp_distribution_backend terminating 
+** Last message in was {update,[],{apply,nil,{set,2,#{nil => nil}}},<0.609.0>}
+** When Server state == {state,<0.428.0>,[],<<62,45,33,151,189,186,27,243,175,191,160,97,197,194,34,73,156,199,145,100>>}
+** Reason for termination == 
+** {function_clause,[{lasp_core,update,[[],{apply,nil,{set,2,#{nil => nil}}},<0.609.0>,#Fun<lasp_distribution_backend.47.56534003>,#Fun<lasp_distribution_backend.48.56534003>,<0.428.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,435}]},{lasp_distribution_backend,handle_call,3,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_distribution_backend.erl"},{line,603}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+** Client <0.609.0> stacktrace
+** [{gen,do_call,4,[{file,"gen.erl"},{line,169}]},{gen_server,call,3,[{file,"gen_server.erl"},{line,219}]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,25}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]
+2018-12-22 17:23:03 =CRASH REPORT====
+  crasher:
+    initial call: lasp_distribution_backend:init/1
+    pid: <0.426.0>
+    registered_name: lasp_distribution_backend
+    exception error: {function_clause,[{lasp_core,update,[[],{apply,nil,{set,2,#{nil => nil}}},<0.609.0>,#Fun<lasp_distribution_backend.47.56534003>,#Fun<lasp_distribution_backend.48.56534003>,<0.428.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,435}]},{lasp_distribution_backend,handle_call,3,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_distribution_backend.erl"},{line,603}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [lasp_sup,<0.378.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.428.0>,<0.430.0>,<0.379.0>]
+    dictionary: [{rand_seed,{#{jump => #Fun<rand.16.10897371>,max => 288230376151711743,next => #Fun<rand.15.10897371>,type => exsplus},[43206562533486206|28821425993821752]}}]
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 336871
+  neighbours:
+    neighbour: [{pid,<0.429.0>},{registered_name,lasp_ets_storage_backend},{initial_call,{lasp_ets_storage_backend,init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[lasp_storage_backend,lasp_distribution_backend,lasp_sup,<0.378.0>]},{message_queue_len,0},{links,[<0.428.0>]},{trap_exit,false},{status,waiting},{heap_size,376},{stack_size,10},{reductions,4321},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,403}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}]
+    neighbour: [{pid,<0.430.0>},{registered_name,lasp_state_based_synchronization_backend},{initial_call,{lasp_state_based_synchronization_backend,init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[lasp_distribution_backend,lasp_sup,<0.378.0>]},{message_queue_len,0},{links,[<0.426.0>]},{trap_exit,false},{status,waiting},{heap_size,610},{stack_size,10},{reductions,209},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,403}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}]
+    neighbour: [{pid,<0.428.0>},{registered_name,lasp_storage_backend},{initial_call,{lasp_storage_backend,init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[lasp_distribution_backend,lasp_sup,<0.378.0>]},{message_queue_len,0},{links,[<0.426.0>,<0.429.0>]},{trap_exit,false},{status,waiting},{heap_size,376},{stack_size,10},{reductions,4535},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,403}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}]
+2018-12-22 17:23:03 =SUPERVISOR REPORT====
+     Supervisor: {local,lasp_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lasp_core,update,[[],{apply,nil,{set,2,#{nil => nil}}},<0.609.0>,#Fun<lasp_distribution_backend.47.56534003>,#Fun<lasp_distribution_backend.48.56534003>,<0.428.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,435}]},{lasp_distribution_backend,handle_call,3,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_distribution_backend.erl"},{line,603}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.426.0>},{id,lasp_distribution_backend},{mfargs,{lasp_distribution_backend,start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-12-22 17:23:03 =ERROR REPORT====
+** Generic server <0.609.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"client_update">>,join_ref => <<"20">>,payload => #{<<"body">> => <<"1">>,<<"input_id">> => <<"i0,0">>},ref => <<"21">>,topic => <<"spreadsheet:1EjYyynxBLND3UZNL75HV56pMmy">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.609.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"20">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:1EjYyynxBLND3UZNL75HV56pMmy">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.605.0>,vsn => <<"2.0.0">>}
+** Reason for termination == 
+** {{{function_clause,[{lasp_core,update,[[],{apply,nil,{set,2,#{nil => nil}}},<0.609.0>,#Fun<lasp_distribution_backend.47.56534003>,#Fun<lasp_distribution_backend.48.56534003>,<0.428.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,435}]},{lasp_distribution_backend,handle_call,3,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_distribution_backend.erl"},{line,603}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},{gen_server,call,[lasp_distribution_backend,{update,[],{apply,nil,{set,2,#{nil => nil}}},<0.609.0>},infinity]}},[{gen_server,call,3,[{file,"gen_server.erl"},{line,223}]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,25}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2018-12-22 17:23:03 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.609.0>
+    registered_name: []
+    exception exit: {{{function_clause,[{lasp_core,update,[[],{apply,nil,{set,2,#{nil => nil}}},<0.609.0>,#Fun<lasp_distribution_backend.47.56534003>,#Fun<lasp_distribution_backend.48.56534003>,<0.428.0>],[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_core.erl"},{line,435}]},{lasp_distribution_backend,handle_call,3,[{file,"/home/pope/Projects/Websheets/deps/lasp/src/lasp_distribution_backend.erl"},{line,603}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},{gen_server,call,[lasp_distribution_backend,{update,[],{apply,nil,{set,2,#{nil => nil}}},<0.609.0>},infinity]}},[{gen_server,call,3,[{file,"gen_server.erl"},{line,223}]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,25}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.605.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.605.0>,<0.494.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 402026
+  neighbours:
+2018-12-22 17:40:37 =ERROR REPORT====
+** Generic server <0.610.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"client_update">>,join_ref => <<"28">>,payload => #{<<"body">> => <<"1">>,<<"input_id">> => <<"i0,0">>},ref => <<"29">>,topic => <<"spreadsheet:1EjYyynxBLND3UZNL75HV56pMmy">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.WebsheetsWeb.UpdateChannel',channel_pid => <0.610.0>,endpoint => 'Elixir.WebsheetsWeb.Endpoint',handler => 'Elixir.WebsheetsWeb.UserSocket',id => nil,join_ref => <<"28">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Websheets.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Transports.V2.WebSocketSerializer',topic => <<"spreadsheet:1EjYyynxBLND3UZNL75HV56pMmy">>,transport => 'Elixir.Phoenix.Transports.WebSocket',transport_name => websocket,transport_pid => <0.607.0>,vsn => <<"2.0.0">>}
+** Reason for termination == 
+** {'function not exported',[{lasp,update,[[],{apply,nil,{set,2,#{nil => nil}}}],[]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,25}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2018-12-22 17:40:37 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.610.0>
+    registered_name: []
+    exception error: {undef,[{lasp,update,[[],{apply,nil,{set,2,#{nil => nil}}}],[]},{'Elixir.WebsheetsWeb.UpdateChannel',handle_in,3,[{file,"lib/websheets_web/channels/update_channel.ex"},{line,25}]},{'Elixir.Phoenix.Channel.Server','-handle_info/2-fun-4-',4,[{file,"lib/phoenix/channel/server.ex"},{line,244}]},{'Elixir.WebsheetsWeb.Endpoint',instrument,4,[{file,"lib/websheets_web/endpoint.ex"},{line,1}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.607.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.607.0>,<0.494.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 262545
+  neighbours:

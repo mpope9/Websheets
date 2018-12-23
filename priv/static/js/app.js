@@ -1687,67 +1687,61 @@ Object.defineProperty(exports, "__esModule", {
 
 var _phoenix = require("phoenix");
 
-var socket = new _phoenix.Socket("/socket", { params: { token: window.userToken } });
-
-// When you connect, you'll often need to authenticate the client.
-// For example, imagine you have an authentication plug, `MyAuth`,
-// which authenticates the session and assigns a `:current_user`.
-// If the current user exists you can assign the user's token in
-// the connection for use in the layout.
-//
-// In your "lib/web/router.ex":
-//
-//     pipeline :browser do
-//       ...
-//       plug MyAuth
-//       plug :put_user_token
-//     end
-//
-//     defp put_user_token(conn, _) do
-//       if current_user = conn.assigns[:current_user] do
-//         token = Phoenix.Token.sign(conn, "user socket", current_user.id)
-//         assign(conn, :user_token, token)
-//       else
-//         conn
-//       end
-//     end
-//
-// Now you need to pass this token to JavaScript. You can do so
-// inside a script tag in "lib/web/templates/layout/app.html.eex":
-//
-//     <script>window.userToken = "<%= assigns[:user_token] %>";</script>
-//
-// You will need to verify the user token in the "connect/2" function
-// in "lib/web/channels/user_socket.ex":
-//
-//     def connect(%{"token" => token}, socket) do
-//       # max_age: 1209600 is equivalent to two weeks in seconds
-//       case Phoenix.Token.verify(socket, "user socket", token, max_age: 1209600) do
-//         {:ok, user_id} ->
-//           {:ok, assign(socket, :user, user_id)}
-//         {:error, reason} ->
-//           :error
-//       end
-//     end
-//
-// Finally, pass the token on connect as below. Or remove it
-// from connect if you don't care about authentication.
-
-// NOTE: The contents of this file will only be executed if
+var endpoint = "/api/create"; // NOTE: The contents of this file will only be executed if
 // you uncomment its entry in "assets/js/app.js".
 
 // To use Phoenix channels, the first step is to import Socket
 // and connect at the socket path in "lib/web/endpoint.ex":
+
+
+var button = document.getElementById("create_button");
+var inputs = document.getElementsByTagName("input");
+var display = document.getElementById("spreadsheet_id_display");
+var joinButton = document.getElementById("join_button");
+var joinInput = document.getElementById("join_input");
+
+var socket = new _phoenix.Socket("/socket", { params: { token: window.userToken } });
+
 socket.connect();
 
 // Now that you are connected, you can join channels with a topic:
-var channel = socket.channel("spreadsheet:test", {});
-channel.join().receive("ok", function (resp) {
-  console.log("Joined successfully", resp);
-}).receive("error", function (resp) {
-  console.log("Unable to join", resp);
-});
+var channel = null;
 
+// Initializes a channel with the server for the specific spreadsheet.
+function createChannel(spreadsheetId) {
+  channel = socket.channel("spreadsheet:" + spreadsheetId, {});
+  channel.on("server_update", handle_server_update);
+  channel.join().receive("ok", function (resp) {
+    console.log("Joined successfully", resp);
+  }).receive("error", function (resp) {
+    console.log("Unable to join", resp);
+  });
+}
+
+// Handles the server update to adjust the client's ui.
+function handle_server_update(message) {
+  console.log(message.input_id);
+  console.log(message.body);
+
+  var input = document.getElementById(message.input_id);
+  input.value = message.body;
+}
+
+// Handler to hit the create endpoint and return the table's new id.
+function createNewTable(event) {
+  var spreadsheetId = "";
+
+  fetch('/api/create').then(function (response) {
+    return response.json();
+  }).then(function (json) {
+    spreadsheetId = json.new_table_id;
+    console.log(spreadsheetId);
+    createChannel(spreadsheetId);
+    display.innerHTML = spreadsheetId;
+  });
+}
+
+// Blur on keyup
 function keyup(event) {
   event.preventDefault();
   if (event.keyCode == 13) {
@@ -1755,16 +1749,39 @@ function keyup(event) {
   }
 }
 
+// On blur send the data to the client
 function clientUpdate(event) {
+  if (channel === null) {
+    return;
+  }
+
+  // TODO: don't get the innerhtml, thats kinda shit
   channel.push("client_update", {
     body: event.target.value,
-    input_id: event.target.id
+    input_id: event.target.id,
+    table_id: display.innerHTML
   });
 }
 
-var inputs = document.getElementsByTagName("input");
+// Join an existing spreadsheet, by id
+function join(event) {
+  var spreadsheetId = joinInput.value;
 
-// Blur on enter up, push client update.
+  if (spreadsheetId === "") {
+    return;
+  }
+
+  createChannel(spreadsheetId);
+  display.innerHTML = spreadsheetId;
+}
+
+// Create a new table and make a socket connection.
+button.addEventListener("click", createNewTable);
+
+// Join an existing table
+joinButton.addEventListener("click", join);
+
+// Blur on enter up, on blur push client update.
 for (var i = 0; i < inputs.length; i++) {
   inputs[i].addEventListener("keyup", keyup);
   inputs[i].addEventListener("blur", clientUpdate);
