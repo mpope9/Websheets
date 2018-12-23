@@ -14,3 +14,7 @@
 erl_crash.dump
 
 *.swp
+
+Mnesia*
+
+log*
