@@ -2604,3 +2604,101 @@
 2018-12-22 20:20:42.206 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
 2018-12-22 20:20:42.207 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
 2018-12-22 20:20:43.213 [warning] <0.277.0> lager_error_logger_h dropped 97 messages in the last second that exceeded the limit of 50 messages/sec
+2018-12-22 20:34:50.552 [info] <0.43.0> Application lager started on node nonode@nohost
+2018-12-22 20:34:50.557 [info] <0.43.0> Application types started on node nonode@nohost
+2018-12-22 20:34:50.558 [info] <0.43.0> Application acceptor_pool started on node nonode@nohost
+2018-12-22 20:34:50.559 [info] <0.43.0> Application rand_compat started on node nonode@nohost
+2018-12-22 20:34:50.561 [info] <0.43.0> Application quickrand started on node nonode@nohost
+2018-12-22 20:34:50.561 [info] <0.43.0> Application uuid started on node nonode@nohost
+2018-12-22 20:34:50.563 [info] <0.297.0>@partisan_config:init:50 Distributed Erlang is not enabled, generating UUID.
+2018-12-22 20:34:50.570 [info] <0.297.0>@partisan_config:init:53 Generated UUID: <<21,238,160,208,6,108,17,233,168,84,16,251,56,94,48,220>>, converting to string.
+2018-12-22 20:34:50.570 [info] <0.297.0>@partisan_config:init:56 Generated name for node: '15eea0d0-066c-11e9-a854-10fb385e30dc@127.0.0.1'
+2018-12-22 20:34:50.575 [info] <0.299.0>@partisan_config:get_node_address:187 Resolving "127.0.0.1"...
+2018-12-22 20:34:50.577 [info] <0.299.0>@partisan_config:get_node_address:190 Resolved "15eea0d0-066c-11e9-a854-10fb385e30dc@127.0.0.1" to {127,0,0,1}
+2018-12-22 20:34:50.577 [info] <0.297.0>@partisan_config:get_node_address:207 Resolved "127.0.0.1" to {127,0,0,1}
+2018-12-22 20:34:50.625 [info] <0.297.0>@partisan_sup:init:64 Partisan listening on {127,0,0,1}:57285 listen_addrs: [#{ip => {127,0,0,1},port => 57285}]
+2018-12-22 20:34:50.651 [info] <0.43.0> Application partisan started on node nonode@nohost
+2018-12-22 20:34:50.656 [info] <0.43.0> Application gen_flow started on node nonode@nohost
+2018-12-22 20:34:50.665 [info] <0.43.0> Application sasl started on node nonode@nohost
+2018-12-22 20:34:50.666 [info] <0.43.0> Application time_compat started on node nonode@nohost
+2018-12-22 20:34:50.667 [info] <0.43.0> Application lasp_support started on node nonode@nohost
+2018-12-22 20:34:50.671 [info] <0.43.0> Application plumtree started on node nonode@nohost
+2018-12-22 20:34:50.674 [info] <0.377.0>@lasp_sup:configure_defaults:219 Setting jitter: false
+2018-12-22 20:34:50.676 [info] <0.377.0>@lasp_sup:configure_defaults:224 Setting jitter percent: 1
+2018-12-22 20:34:50.677 [info] <0.377.0>@lasp_sup:configure_defaults:229 Setting tutorial: false
+2018-12-22 20:34:50.679 [info] <0.377.0>@lasp_sup:configure_defaults:234 Setting event interval: 0
+2018-12-22 20:34:50.680 [info] <0.377.0>@lasp_sup:configure_defaults:239 Setting max events: 1000
+2018-12-22 20:34:50.681 [info] <0.377.0>@lasp_sup:configure_defaults:244 Setting extended logging: false
+2018-12-22 20:34:50.682 [info] <0.377.0>@lasp_sup:configure_defaults:249 Setting mailbox logging: false
+2018-12-22 20:34:50.684 [info] <0.377.0>@lasp_sup:configure_defaults:254 Setting operation mode: state_based
+2018-12-22 20:34:50.686 [info] <0.377.0>@lasp_sup:configure_defaults:259 Setting set type: orset
+2018-12-22 20:34:50.689 [info] <0.377.0>@lasp_sup:configure_defaults:272 Setting broadcast: false
+2018-12-22 20:34:50.713 [info] <0.377.0>@lasp_sup:init:88 Membership: false
+2018-12-22 20:34:50.715 [info] <0.377.0>@lasp_sup:init:106 Workflow: false
+2018-12-22 20:34:50.721 [info] <0.377.0>@lasp_sup:advertisement_counter_child_specs:393 AdClientEnabled: false
+2018-12-22 20:34:50.726 [info] <0.377.0>@lasp_sup:advertisement_counter_child_specs:426 AdServerEnabled: false
+2018-12-22 20:34:50.727 [info] <0.377.0>@lasp_sup:game_tournament_child_specs:456 TournClientEnabled: false
+2018-12-22 20:34:50.729 [info] <0.377.0>@lasp_sup:game_tournament_child_specs:475 TournServerEnabled: false
+2018-12-22 20:34:50.730 [info] <0.377.0>@lasp_sup:throughput_child_specs:498 ThroughputType: gset
+2018-12-22 20:34:50.732 [info] <0.377.0>@lasp_sup:throughput_child_specs:506 ThroughputClientEnabled: false
+2018-12-22 20:34:50.733 [info] <0.377.0>@lasp_sup:throughput_child_specs:525 ThroughputServerEnabled: false
+2018-12-22 20:34:50.735 [info] <0.377.0>@lasp_sup:divergence_child_specs:548 DivergenceType: gcounter
+2018-12-22 20:34:50.736 [info] <0.377.0>@lasp_sup:divergence_child_specs:556 DivergenceClientEnabled: false
+2018-12-22 20:34:50.737 [info] <0.377.0>@lasp_sup:divergence_child_specs:575 DivergenceServerEnabled: false
+2018-12-22 20:34:50.752 [info] <0.427.0>@lasp_ets_storage_backend:init:106 Backend initialized with pid: <0.427.0>
+2018-12-22 20:34:50.752 [info] <0.426.0>@lasp_storage_backend:init:121 Backend lasp_ets_storage_backend initialized: <0.427.0>
+2018-12-22 20:34:50.756 [info] <0.43.0> Application lasp started on node nonode@nohost
+2018-12-22 20:34:50.758 [info] <0.43.0> Application file_system started on node nonode@nohost
+2018-12-22 20:34:50.766 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2018-12-22 20:34:50.767 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2018-12-22 20:34:50.768 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2018-12-22 20:34:51.267 [warning] <0.277.0> lager_error_logger_h dropped 110 messages in the last second that exceeded the limit of 50 messages/sec
+2018-12-22 20:36:14.443 [info] <0.43.0> Application lager started on node nonode@nohost
+2018-12-22 20:36:14.447 [info] <0.43.0> Application types started on node nonode@nohost
+2018-12-22 20:36:14.448 [info] <0.43.0> Application acceptor_pool started on node nonode@nohost
+2018-12-22 20:36:14.449 [info] <0.43.0> Application rand_compat started on node nonode@nohost
+2018-12-22 20:36:14.451 [info] <0.43.0> Application quickrand started on node nonode@nohost
+2018-12-22 20:36:14.451 [info] <0.43.0> Application uuid started on node nonode@nohost
+2018-12-22 20:36:14.453 [info] <0.297.0>@partisan_config:init:50 Distributed Erlang is not enabled, generating UUID.
+2018-12-22 20:36:14.460 [info] <0.297.0>@partisan_config:init:53 Generated UUID: <<71,239,48,44,6,108,17,233,132,168,16,251,56,94,48,220>>, converting to string.
+2018-12-22 20:36:14.460 [info] <0.297.0>@partisan_config:init:56 Generated name for node: '47ef302c-066c-11e9-84a8-10fb385e30dc@127.0.0.1'
+2018-12-22 20:36:14.465 [info] <0.299.0>@partisan_config:get_node_address:187 Resolving "127.0.0.1"...
+2018-12-22 20:36:14.466 [info] <0.299.0>@partisan_config:get_node_address:190 Resolved "47ef302c-066c-11e9-84a8-10fb385e30dc@127.0.0.1" to {127,0,0,1}
+2018-12-22 20:36:14.466 [info] <0.297.0>@partisan_config:get_node_address:207 Resolved "127.0.0.1" to {127,0,0,1}
+2018-12-22 20:36:14.516 [info] <0.297.0>@partisan_sup:init:64 Partisan listening on {127,0,0,1}:38557 listen_addrs: [#{ip => {127,0,0,1},port => 38557}]
+2018-12-22 20:36:14.544 [info] <0.43.0> Application partisan started on node nonode@nohost
+2018-12-22 20:36:14.551 [info] <0.43.0> Application gen_flow started on node nonode@nohost
+2018-12-22 20:36:14.560 [info] <0.43.0> Application sasl started on node nonode@nohost
+2018-12-22 20:36:14.561 [info] <0.43.0> Application time_compat started on node nonode@nohost
+2018-12-22 20:36:14.562 [info] <0.43.0> Application lasp_support started on node nonode@nohost
+2018-12-22 20:36:14.567 [info] <0.43.0> Application plumtree started on node nonode@nohost
+2018-12-22 20:36:14.569 [info] <0.377.0>@lasp_sup:configure_defaults:219 Setting jitter: false
+2018-12-22 20:36:14.572 [info] <0.377.0>@lasp_sup:configure_defaults:224 Setting jitter percent: 1
+2018-12-22 20:36:14.574 [info] <0.377.0>@lasp_sup:configure_defaults:229 Setting tutorial: false
+2018-12-22 20:36:14.575 [info] <0.377.0>@lasp_sup:configure_defaults:234 Setting event interval: 0
+2018-12-22 20:36:14.577 [info] <0.377.0>@lasp_sup:configure_defaults:239 Setting max events: 1000
+2018-12-22 20:36:14.581 [info] <0.377.0>@lasp_sup:configure_defaults:244 Setting extended logging: false
+2018-12-22 20:36:14.583 [info] <0.377.0>@lasp_sup:configure_defaults:249 Setting mailbox logging: false
+2018-12-22 20:36:14.584 [info] <0.377.0>@lasp_sup:configure_defaults:254 Setting operation mode: state_based
+2018-12-22 20:36:14.585 [info] <0.377.0>@lasp_sup:configure_defaults:259 Setting set type: orset
+2018-12-22 20:36:14.588 [info] <0.377.0>@lasp_sup:configure_defaults:272 Setting broadcast: false
+2018-12-22 20:36:14.612 [info] <0.377.0>@lasp_sup:init:88 Membership: false
+2018-12-22 20:36:14.615 [info] <0.377.0>@lasp_sup:init:106 Workflow: false
+2018-12-22 20:36:14.621 [info] <0.377.0>@lasp_sup:advertisement_counter_child_specs:393 AdClientEnabled: false
+2018-12-22 20:36:14.623 [info] <0.377.0>@lasp_sup:advertisement_counter_child_specs:426 AdServerEnabled: false
+2018-12-22 20:36:14.625 [info] <0.377.0>@lasp_sup:game_tournament_child_specs:456 TournClientEnabled: false
+2018-12-22 20:36:14.626 [info] <0.377.0>@lasp_sup:game_tournament_child_specs:475 TournServerEnabled: false
+2018-12-22 20:36:14.628 [info] <0.377.0>@lasp_sup:throughput_child_specs:498 ThroughputType: gset
+2018-12-22 20:36:14.629 [info] <0.377.0>@lasp_sup:throughput_child_specs:506 ThroughputClientEnabled: false
+2018-12-22 20:36:14.630 [info] <0.377.0>@lasp_sup:throughput_child_specs:525 ThroughputServerEnabled: false
+2018-12-22 20:36:14.632 [info] <0.377.0>@lasp_sup:divergence_child_specs:548 DivergenceType: gcounter
+2018-12-22 20:36:14.633 [info] <0.377.0>@lasp_sup:divergence_child_specs:556 DivergenceClientEnabled: false
+2018-12-22 20:36:14.635 [info] <0.377.0>@lasp_sup:divergence_child_specs:575 DivergenceServerEnabled: false
+2018-12-22 20:36:14.652 [info] <0.427.0>@lasp_ets_storage_backend:init:106 Backend initialized with pid: <0.427.0>
+2018-12-22 20:36:14.652 [info] <0.426.0>@lasp_storage_backend:init:121 Backend lasp_ets_storage_backend initialized: <0.427.0>
+2018-12-22 20:36:14.654 [info] <0.43.0> Application lasp started on node nonode@nohost
+2018-12-22 20:36:14.656 [info] <0.43.0> Application file_system started on node nonode@nohost
+2018-12-22 20:36:14.663 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2018-12-22 20:36:14.664 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2018-12-22 20:36:14.665 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2018-12-22 20:36:15.270 [warning] <0.277.0> lager_error_logger_h dropped 110 messages in the last second that exceeded the limit of 50 messages/sec
