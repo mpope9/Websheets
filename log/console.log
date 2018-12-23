@@ -2187,3 +2187,420 @@
 2018-12-22 19:27:27.797 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
 2018-12-22 19:27:27.799 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
 2018-12-22 19:27:28.259 [warning] <0.276.0> lager_error_logger_h dropped 110 messages in the last second that exceeded the limit of 50 messages/sec
+2018-12-22 19:53:38.988 [info] <0.43.0> Application lager started on node nonode@nohost
+2018-12-22 19:53:38.992 [info] <0.43.0> Application types started on node nonode@nohost
+2018-12-22 19:53:38.993 [info] <0.43.0> Application acceptor_pool started on node nonode@nohost
+2018-12-22 19:53:38.994 [info] <0.43.0> Application rand_compat started on node nonode@nohost
+2018-12-22 19:53:38.996 [info] <0.43.0> Application quickrand started on node nonode@nohost
+2018-12-22 19:53:38.996 [info] <0.43.0> Application uuid started on node nonode@nohost
+2018-12-22 19:53:38.998 [info] <0.358.0>@partisan_config:init:50 Distributed Erlang is not enabled, generating UUID.
+2018-12-22 19:53:39.005 [info] <0.358.0>@partisan_config:init:53 Generated UUID: <<84,195,198,166,6,102,17,233,190,233,16,251,247,149,32,109>>, converting to string.
+2018-12-22 19:53:39.005 [info] <0.358.0>@partisan_config:init:56 Generated name for node: '54c3c6a6-0666-11e9-bee9-10fbf795206d@127.0.0.1'
+2018-12-22 19:53:39.010 [info] <0.360.0>@partisan_config:get_node_address:187 Resolving "127.0.0.1"...
+2018-12-22 19:53:39.012 [info] <0.360.0>@partisan_config:get_node_address:190 Resolved "54c3c6a6-0666-11e9-bee9-10fbf795206d@127.0.0.1" to {127,0,0,1}
+2018-12-22 19:53:39.012 [info] <0.358.0>@partisan_config:get_node_address:207 Resolved "127.0.0.1" to {127,0,0,1}
+2018-12-22 19:53:39.064 [info] <0.358.0>@partisan_sup:init:64 Partisan listening on {127,0,0,1}:45553 listen_addrs: [#{ip => {127,0,0,1},port => 45553}]
+2018-12-22 19:53:39.093 [info] <0.43.0> Application partisan started on node nonode@nohost
+2018-12-22 19:53:39.098 [info] <0.43.0> Application gen_flow started on node nonode@nohost
+2018-12-22 19:53:39.106 [info] <0.43.0> Application sasl started on node nonode@nohost
+2018-12-22 19:53:39.109 [info] <0.43.0> Application time_compat started on node nonode@nohost
+2018-12-22 19:53:39.110 [info] <0.43.0> Application lasp_support started on node nonode@nohost
+2018-12-22 19:53:39.116 [info] <0.43.0> Application plumtree started on node nonode@nohost
+2018-12-22 19:53:39.118 [info] <0.438.0>@lasp_sup:configure_defaults:219 Setting jitter: false
+2018-12-22 19:53:39.121 [info] <0.438.0>@lasp_sup:configure_defaults:224 Setting jitter percent: 1
+2018-12-22 19:53:39.123 [info] <0.438.0>@lasp_sup:configure_defaults:229 Setting tutorial: false
+2018-12-22 19:53:39.125 [info] <0.438.0>@lasp_sup:configure_defaults:234 Setting event interval: 0
+2018-12-22 19:53:39.126 [info] <0.438.0>@lasp_sup:configure_defaults:239 Setting max events: 1000
+2018-12-22 19:53:39.128 [info] <0.438.0>@lasp_sup:configure_defaults:244 Setting extended logging: false
+2018-12-22 19:53:39.129 [info] <0.438.0>@lasp_sup:configure_defaults:249 Setting mailbox logging: false
+2018-12-22 19:53:39.131 [info] <0.438.0>@lasp_sup:configure_defaults:254 Setting operation mode: state_based
+2018-12-22 19:53:39.132 [info] <0.438.0>@lasp_sup:configure_defaults:259 Setting set type: orset
+2018-12-22 19:53:39.135 [info] <0.438.0>@lasp_sup:configure_defaults:272 Setting broadcast: false
+2018-12-22 19:53:39.162 [info] <0.438.0>@lasp_sup:init:88 Membership: false
+2018-12-22 19:53:39.164 [info] <0.438.0>@lasp_sup:init:106 Workflow: false
+2018-12-22 19:53:39.169 [info] <0.438.0>@lasp_sup:advertisement_counter_child_specs:393 AdClientEnabled: false
+2018-12-22 19:53:39.172 [info] <0.438.0>@lasp_sup:advertisement_counter_child_specs:426 AdServerEnabled: false
+2018-12-22 19:53:39.173 [info] <0.438.0>@lasp_sup:game_tournament_child_specs:456 TournClientEnabled: false
+2018-12-22 19:53:39.175 [info] <0.438.0>@lasp_sup:game_tournament_child_specs:475 TournServerEnabled: false
+2018-12-22 19:53:39.176 [info] <0.438.0>@lasp_sup:throughput_child_specs:498 ThroughputType: gset
+2018-12-22 19:53:39.177 [info] <0.438.0>@lasp_sup:throughput_child_specs:506 ThroughputClientEnabled: false
+2018-12-22 19:53:39.179 [info] <0.438.0>@lasp_sup:throughput_child_specs:525 ThroughputServerEnabled: false
+2018-12-22 19:53:39.180 [info] <0.438.0>@lasp_sup:divergence_child_specs:548 DivergenceType: gcounter
+2018-12-22 19:53:39.182 [info] <0.438.0>@lasp_sup:divergence_child_specs:556 DivergenceClientEnabled: false
+2018-12-22 19:53:39.183 [info] <0.438.0>@lasp_sup:divergence_child_specs:575 DivergenceServerEnabled: false
+2018-12-22 19:53:39.200 [info] <0.488.0>@lasp_ets_storage_backend:init:106 Backend initialized with pid: <0.488.0>
+2018-12-22 19:53:39.200 [info] <0.487.0>@lasp_storage_backend:init:121 Backend lasp_ets_storage_backend initialized: <0.488.0>
+2018-12-22 19:53:39.202 [info] <0.43.0> Application lasp started on node nonode@nohost
+2018-12-22 19:53:39.204 [info] <0.43.0> Application file_system started on node nonode@nohost
+2018-12-22 19:53:39.212 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2018-12-22 19:53:39.212 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2018-12-22 19:53:39.213 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2018-12-22 19:53:40.238 [warning] <0.338.0> lager_error_logger_h dropped 100 messages in the last second that exceeded the limit of 50 messages/sec
+2018-12-22 19:59:48.499 [error] <0.749.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 19:59:51.507 [error] <0.758.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 19:59:56.512 [error] <0.763.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:00:06.515 [error] <0.768.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:00:16.518 [error] <0.774.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:00:26.522 [error] <0.780.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:00:36.526 [error] <0.786.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:00:46.530 [error] <0.792.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:00:57.534 [error] <0.798.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:01:08.530 [error] <0.804.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:01:19.531 [error] <0.811.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:01:30.532 [error] <0.817.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:01:41.535 [error] <0.823.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:01:52.536 [error] <0.830.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:02:03.538 [error] <0.836.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:02:14.539 [error] <0.842.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:02:25.540 [error] <0.848.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:02:36.541 [error] <0.854.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:02:47.542 [error] <0.860.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:02:58.544 [error] <0.866.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:03:09.544 [error] <0.873.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:03:20.546 [error] <0.879.0> Ranch listener 'Elixir.WebsheetsWeb.Endpoint.HTTP' terminated with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"i1,2">>,<<"4">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison.Encoder.List','-encode/3-fun-0-',3,[{file,"lib/poison/encoder.ex"},{line,259}]},{'Elixir.Poison.Encoder.List','-encode/3-lists^foldr/2-1-',3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.List',encode,3,[{file,"lib/poison/encoder.ex"},{line,260}]},{'Elixir.Poison.Encoder.Map',...},...]},...}
+2018-12-22 20:03:48.603 [info] <0.43.0> Application lager started on node nonode@nohost
+2018-12-22 20:03:48.607 [info] <0.43.0> Application types started on node nonode@nohost
+2018-12-22 20:03:48.608 [info] <0.43.0> Application acceptor_pool started on node nonode@nohost
+2018-12-22 20:03:48.609 [info] <0.43.0> Application rand_compat started on node nonode@nohost
+2018-12-22 20:03:48.611 [info] <0.43.0> Application quickrand started on node nonode@nohost
+2018-12-22 20:03:48.611 [info] <0.43.0> Application uuid started on node nonode@nohost
+2018-12-22 20:03:48.613 [info] <0.319.0>@partisan_config:init:50 Distributed Erlang is not enabled, generating UUID.
+2018-12-22 20:03:48.618 [info] <0.319.0>@partisan_config:init:53 Generated UUID: <<192,31,78,76,6,103,17,233,136,127,16,251,56,217,33,20>>, converting to string.
+2018-12-22 20:03:48.618 [info] <0.319.0>@partisan_config:init:56 Generated name for node: 'c01f4e4c-0667-11e9-887f-10fb38d92114@127.0.0.1'
+2018-12-22 20:03:48.621 [info] <0.321.0>@partisan_config:get_node_address:187 Resolving "127.0.0.1"...
+2018-12-22 20:03:48.623 [info] <0.321.0>@partisan_config:get_node_address:190 Resolved "c01f4e4c-0667-11e9-887f-10fb38d92114@127.0.0.1" to {127,0,0,1}
+2018-12-22 20:03:48.623 [info] <0.319.0>@partisan_config:get_node_address:207 Resolved "127.0.0.1" to {127,0,0,1}
+2018-12-22 20:03:48.672 [info] <0.319.0>@partisan_sup:init:64 Partisan listening on {127,0,0,1}:52687 listen_addrs: [#{ip => {127,0,0,1},port => 52687}]
+2018-12-22 20:03:48.699 [info] <0.43.0> Application partisan started on node nonode@nohost
+2018-12-22 20:03:48.705 [info] <0.43.0> Application gen_flow started on node nonode@nohost
+2018-12-22 20:03:48.715 [info] <0.43.0> Application sasl started on node nonode@nohost
+2018-12-22 20:03:48.716 [info] <0.43.0> Application time_compat started on node nonode@nohost
+2018-12-22 20:03:48.717 [info] <0.43.0> Application lasp_support started on node nonode@nohost
+2018-12-22 20:03:48.723 [info] <0.43.0> Application plumtree started on node nonode@nohost
+2018-12-22 20:03:48.725 [info] <0.399.0>@lasp_sup:configure_defaults:219 Setting jitter: false
+2018-12-22 20:03:48.728 [info] <0.399.0>@lasp_sup:configure_defaults:224 Setting jitter percent: 1
+2018-12-22 20:03:48.730 [info] <0.399.0>@lasp_sup:configure_defaults:229 Setting tutorial: false
+2018-12-22 20:03:48.732 [info] <0.399.0>@lasp_sup:configure_defaults:234 Setting event interval: 0
+2018-12-22 20:03:48.733 [info] <0.399.0>@lasp_sup:configure_defaults:239 Setting max events: 1000
+2018-12-22 20:03:48.736 [info] <0.399.0>@lasp_sup:configure_defaults:244 Setting extended logging: false
+2018-12-22 20:03:48.738 [info] <0.399.0>@lasp_sup:configure_defaults:249 Setting mailbox logging: false
+2018-12-22 20:03:48.739 [info] <0.399.0>@lasp_sup:configure_defaults:254 Setting operation mode: state_based
+2018-12-22 20:03:48.741 [info] <0.399.0>@lasp_sup:configure_defaults:259 Setting set type: orset
+2018-12-22 20:03:48.744 [info] <0.399.0>@lasp_sup:configure_defaults:272 Setting broadcast: false
+2018-12-22 20:03:48.767 [info] <0.399.0>@lasp_sup:init:88 Membership: false
+2018-12-22 20:03:48.770 [info] <0.399.0>@lasp_sup:init:106 Workflow: false
+2018-12-22 20:03:48.775 [info] <0.399.0>@lasp_sup:advertisement_counter_child_specs:393 AdClientEnabled: false
+2018-12-22 20:03:48.778 [info] <0.399.0>@lasp_sup:advertisement_counter_child_specs:426 AdServerEnabled: false
+2018-12-22 20:03:48.779 [info] <0.399.0>@lasp_sup:game_tournament_child_specs:456 TournClientEnabled: false
+2018-12-22 20:03:48.781 [info] <0.399.0>@lasp_sup:game_tournament_child_specs:475 TournServerEnabled: false
+2018-12-22 20:03:48.782 [info] <0.399.0>@lasp_sup:throughput_child_specs:498 ThroughputType: gset
+2018-12-22 20:03:48.784 [info] <0.399.0>@lasp_sup:throughput_child_specs:506 ThroughputClientEnabled: false
+2018-12-22 20:03:48.785 [info] <0.399.0>@lasp_sup:throughput_child_specs:525 ThroughputServerEnabled: false
+2018-12-22 20:03:48.786 [info] <0.399.0>@lasp_sup:divergence_child_specs:548 DivergenceType: gcounter
+2018-12-22 20:03:48.788 [info] <0.399.0>@lasp_sup:divergence_child_specs:556 DivergenceClientEnabled: false
+2018-12-22 20:03:48.789 [info] <0.399.0>@lasp_sup:divergence_child_specs:575 DivergenceServerEnabled: false
+2018-12-22 20:03:48.805 [info] <0.449.0>@lasp_ets_storage_backend:init:106 Backend initialized with pid: <0.449.0>
+2018-12-22 20:03:48.805 [info] <0.448.0>@lasp_storage_backend:init:121 Backend lasp_ets_storage_backend initialized: <0.449.0>
+2018-12-22 20:03:48.808 [info] <0.43.0> Application lasp started on node nonode@nohost
+2018-12-22 20:03:48.809 [info] <0.43.0> Application file_system started on node nonode@nohost
+2018-12-22 20:03:48.816 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2018-12-22 20:03:48.817 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2018-12-22 20:03:48.818 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2018-12-22 20:03:49.260 [warning] <0.299.0> lager_error_logger_h dropped 110 messages in the last second that exceeded the limit of 50 messages/sec
+2018-12-22 20:05:50.905 [info] <0.43.0> Application lager started on node nonode@nohost
+2018-12-22 20:05:50.912 [info] <0.43.0> Application types started on node nonode@nohost
+2018-12-22 20:05:50.916 [info] <0.43.0> Application acceptor_pool started on node nonode@nohost
+2018-12-22 20:05:50.919 [info] <0.43.0> Application rand_compat started on node nonode@nohost
+2018-12-22 20:05:50.921 [info] <0.43.0> Application quickrand started on node nonode@nohost
+2018-12-22 20:05:50.921 [info] <0.43.0> Application uuid started on node nonode@nohost
+2018-12-22 20:05:50.924 [info] <0.315.0>@partisan_config:init:50 Distributed Erlang is not enabled, generating UUID.
+2018-12-22 20:05:50.940 [info] <0.315.0>@partisan_config:init:53 Generated UUID: <<9,8,41,18,6,104,17,233,183,69,16,251,182,19,158,22>>, converting to string.
+2018-12-22 20:05:50.940 [info] <0.315.0>@partisan_config:init:56 Generated name for node: '09082912-0668-11e9-b745-10fbb6139e16@127.0.0.1'
+2018-12-22 20:05:50.951 [info] <0.317.0>@partisan_config:get_node_address:187 Resolving "127.0.0.1"...
+2018-12-22 20:05:50.954 [info] <0.317.0>@partisan_config:get_node_address:190 Resolved "09082912-0668-11e9-b745-10fbb6139e16@127.0.0.1" to {127,0,0,1}
+2018-12-22 20:05:50.954 [info] <0.315.0>@partisan_config:get_node_address:207 Resolved "127.0.0.1" to {127,0,0,1}
+2018-12-22 20:05:51.037 [info] <0.315.0>@partisan_sup:init:64 Partisan listening on {127,0,0,1}:45967 listen_addrs: [#{ip => {127,0,0,1},port => 45967}]
+2018-12-22 20:05:51.074 [info] <0.43.0> Application partisan started on node nonode@nohost
+2018-12-22 20:05:51.082 [info] <0.43.0> Application gen_flow started on node nonode@nohost
+2018-12-22 20:05:51.093 [info] <0.43.0> Application sasl started on node nonode@nohost
+2018-12-22 20:05:51.095 [info] <0.43.0> Application time_compat started on node nonode@nohost
+2018-12-22 20:05:51.097 [info] <0.43.0> Application lasp_support started on node nonode@nohost
+2018-12-22 20:05:51.104 [info] <0.43.0> Application plumtree started on node nonode@nohost
+2018-12-22 20:05:51.107 [info] <0.395.0>@lasp_sup:configure_defaults:219 Setting jitter: false
+2018-12-22 20:05:51.114 [info] <0.395.0>@lasp_sup:configure_defaults:224 Setting jitter percent: 1
+2018-12-22 20:05:51.116 [info] <0.395.0>@lasp_sup:configure_defaults:229 Setting tutorial: false
+2018-12-22 20:05:51.118 [info] <0.395.0>@lasp_sup:configure_defaults:234 Setting event interval: 0
+2018-12-22 20:05:51.119 [info] <0.395.0>@lasp_sup:configure_defaults:239 Setting max events: 1000
+2018-12-22 20:05:51.121 [info] <0.395.0>@lasp_sup:configure_defaults:244 Setting extended logging: false
+2018-12-22 20:05:51.122 [info] <0.395.0>@lasp_sup:configure_defaults:249 Setting mailbox logging: false
+2018-12-22 20:05:51.124 [info] <0.395.0>@lasp_sup:configure_defaults:254 Setting operation mode: state_based
+2018-12-22 20:05:51.127 [info] <0.395.0>@lasp_sup:configure_defaults:259 Setting set type: orset
+2018-12-22 20:05:51.133 [info] <0.395.0>@lasp_sup:configure_defaults:272 Setting broadcast: false
+2018-12-22 20:05:51.184 [info] <0.395.0>@lasp_sup:init:88 Membership: false
+2018-12-22 20:05:51.186 [info] <0.395.0>@lasp_sup:init:106 Workflow: false
+2018-12-22 20:05:51.207 [info] <0.395.0>@lasp_sup:advertisement_counter_child_specs:393 AdClientEnabled: false
+2018-12-22 20:05:51.218 [info] <0.395.0>@lasp_sup:advertisement_counter_child_specs:426 AdServerEnabled: false
+2018-12-22 20:05:51.221 [info] <0.395.0>@lasp_sup:game_tournament_child_specs:456 TournClientEnabled: false
+2018-12-22 20:05:51.224 [info] <0.395.0>@lasp_sup:game_tournament_child_specs:475 TournServerEnabled: false
+2018-12-22 20:05:51.226 [info] <0.395.0>@lasp_sup:throughput_child_specs:498 ThroughputType: gset
+2018-12-22 20:05:51.234 [info] <0.395.0>@lasp_sup:throughput_child_specs:506 ThroughputClientEnabled: false
+2018-12-22 20:05:51.238 [info] <0.395.0>@lasp_sup:throughput_child_specs:525 ThroughputServerEnabled: false
+2018-12-22 20:05:51.240 [info] <0.395.0>@lasp_sup:divergence_child_specs:548 DivergenceType: gcounter
+2018-12-22 20:05:51.244 [info] <0.395.0>@lasp_sup:divergence_child_specs:556 DivergenceClientEnabled: false
+2018-12-22 20:05:51.251 [info] <0.395.0>@lasp_sup:divergence_child_specs:575 DivergenceServerEnabled: false
+2018-12-22 20:05:51.283 [info] <0.445.0>@lasp_ets_storage_backend:init:106 Backend initialized with pid: <0.445.0>
+2018-12-22 20:05:51.283 [info] <0.444.0>@lasp_storage_backend:init:121 Backend lasp_ets_storage_backend initialized: <0.445.0>
+2018-12-22 20:05:51.286 [info] <0.43.0> Application lasp started on node nonode@nohost
+2018-12-22 20:05:51.288 [info] <0.43.0> Application file_system started on node nonode@nohost
+2018-12-22 20:05:51.300 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2018-12-22 20:05:51.301 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2018-12-22 20:05:51.302 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2018-12-22 20:05:52.315 [warning] <0.295.0> lager_error_logger_h dropped 97 messages in the last second that exceeded the limit of 50 messages/sec
+2018-12-22 20:06:11.576 [info] <0.43.0> Application lager started on node nonode@nohost
+2018-12-22 20:06:11.581 [info] <0.43.0> Application types started on node nonode@nohost
+2018-12-22 20:06:11.582 [info] <0.43.0> Application acceptor_pool started on node nonode@nohost
+2018-12-22 20:06:11.583 [info] <0.43.0> Application rand_compat started on node nonode@nohost
+2018-12-22 20:06:11.584 [info] <0.43.0> Application quickrand started on node nonode@nohost
+2018-12-22 20:06:11.584 [info] <0.43.0> Application uuid started on node nonode@nohost
+2018-12-22 20:06:11.586 [info] <0.297.0>@partisan_config:init:50 Distributed Erlang is not enabled, generating UUID.
+2018-12-22 20:06:11.594 [info] <0.297.0>@partisan_config:init:53 Generated UUID: <<21,87,161,192,6,104,17,233,132,216,16,251,56,94,48,220>>, converting to string.
+2018-12-22 20:06:11.594 [info] <0.297.0>@partisan_config:init:56 Generated name for node: '1557a1c0-0668-11e9-84d8-10fb385e30dc@127.0.0.1'
+2018-12-22 20:06:11.596 [info] <0.299.0>@partisan_config:get_node_address:187 Resolving "127.0.0.1"...
+2018-12-22 20:06:11.598 [info] <0.299.0>@partisan_config:get_node_address:190 Resolved "1557a1c0-0668-11e9-84d8-10fb385e30dc@127.0.0.1" to {127,0,0,1}
+2018-12-22 20:06:11.598 [info] <0.297.0>@partisan_config:get_node_address:207 Resolved "127.0.0.1" to {127,0,0,1}
+2018-12-22 20:06:11.648 [info] <0.297.0>@partisan_sup:init:64 Partisan listening on {127,0,0,1}:32909 listen_addrs: [#{ip => {127,0,0,1},port => 32909}]
+2018-12-22 20:06:11.677 [info] <0.43.0> Application partisan started on node nonode@nohost
+2018-12-22 20:06:11.680 [info] <0.43.0> Application gen_flow started on node nonode@nohost
+2018-12-22 20:06:11.689 [info] <0.43.0> Application sasl started on node nonode@nohost
+2018-12-22 20:06:11.691 [info] <0.43.0> Application time_compat started on node nonode@nohost
+2018-12-22 20:06:11.692 [info] <0.43.0> Application lasp_support started on node nonode@nohost
+2018-12-22 20:06:11.697 [info] <0.43.0> Application plumtree started on node nonode@nohost
+2018-12-22 20:06:11.699 [info] <0.377.0>@lasp_sup:configure_defaults:219 Setting jitter: false
+2018-12-22 20:06:11.702 [info] <0.377.0>@lasp_sup:configure_defaults:224 Setting jitter percent: 1
+2018-12-22 20:06:11.704 [info] <0.377.0>@lasp_sup:configure_defaults:229 Setting tutorial: false
+2018-12-22 20:06:11.705 [info] <0.377.0>@lasp_sup:configure_defaults:234 Setting event interval: 0
+2018-12-22 20:06:11.706 [info] <0.377.0>@lasp_sup:configure_defaults:239 Setting max events: 1000
+2018-12-22 20:06:11.708 [info] <0.377.0>@lasp_sup:configure_defaults:244 Setting extended logging: false
+2018-12-22 20:06:11.710 [info] <0.377.0>@lasp_sup:configure_defaults:249 Setting mailbox logging: false
+2018-12-22 20:06:11.711 [info] <0.377.0>@lasp_sup:configure_defaults:254 Setting operation mode: state_based
+2018-12-22 20:06:11.712 [info] <0.377.0>@lasp_sup:configure_defaults:259 Setting set type: orset
+2018-12-22 20:06:11.715 [info] <0.377.0>@lasp_sup:configure_defaults:272 Setting broadcast: false
+2018-12-22 20:06:11.737 [info] <0.377.0>@lasp_sup:init:88 Membership: false
+2018-12-22 20:06:11.739 [info] <0.377.0>@lasp_sup:init:106 Workflow: false
+2018-12-22 20:06:11.745 [info] <0.377.0>@lasp_sup:advertisement_counter_child_specs:393 AdClientEnabled: false
+2018-12-22 20:06:11.747 [info] <0.377.0>@lasp_sup:advertisement_counter_child_specs:426 AdServerEnabled: false
+2018-12-22 20:06:11.749 [info] <0.377.0>@lasp_sup:game_tournament_child_specs:456 TournClientEnabled: false
+2018-12-22 20:06:11.750 [info] <0.377.0>@lasp_sup:game_tournament_child_specs:475 TournServerEnabled: false
+2018-12-22 20:06:11.751 [info] <0.377.0>@lasp_sup:throughput_child_specs:498 ThroughputType: gset
+2018-12-22 20:06:11.753 [info] <0.377.0>@lasp_sup:throughput_child_specs:506 ThroughputClientEnabled: false
+2018-12-22 20:06:11.754 [info] <0.377.0>@lasp_sup:throughput_child_specs:525 ThroughputServerEnabled: false
+2018-12-22 20:06:11.756 [info] <0.377.0>@lasp_sup:divergence_child_specs:548 DivergenceType: gcounter
+2018-12-22 20:06:11.758 [info] <0.377.0>@lasp_sup:divergence_child_specs:556 DivergenceClientEnabled: false
+2018-12-22 20:06:11.760 [info] <0.377.0>@lasp_sup:divergence_child_specs:575 DivergenceServerEnabled: false
+2018-12-22 20:06:11.774 [info] <0.427.0>@lasp_ets_storage_backend:init:106 Backend initialized with pid: <0.427.0>
+2018-12-22 20:06:11.774 [info] <0.426.0>@lasp_storage_backend:init:121 Backend lasp_ets_storage_backend initialized: <0.427.0>
+2018-12-22 20:06:11.776 [info] <0.43.0> Application lasp started on node nonode@nohost
+2018-12-22 20:06:11.778 [info] <0.43.0> Application file_system started on node nonode@nohost
+2018-12-22 20:06:11.785 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2018-12-22 20:06:11.786 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2018-12-22 20:06:11.787 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2018-12-22 20:06:12.261 [warning] <0.277.0> lager_error_logger_h dropped 110 messages in the last second that exceeded the limit of 50 messages/sec
+2018-12-22 20:09:21.053 [info] <0.43.0> Application lager started on node nonode@nohost
+2018-12-22 20:09:21.059 [info] <0.43.0> Application types started on node nonode@nohost
+2018-12-22 20:09:21.060 [info] <0.43.0> Application acceptor_pool started on node nonode@nohost
+2018-12-22 20:09:21.061 [info] <0.43.0> Application rand_compat started on node nonode@nohost
+2018-12-22 20:09:21.062 [info] <0.43.0> Application quickrand started on node nonode@nohost
+2018-12-22 20:09:21.062 [info] <0.43.0> Application uuid started on node nonode@nohost
+2018-12-22 20:09:21.065 [info] <0.315.0>@partisan_config:init:50 Distributed Erlang is not enabled, generating UUID.
+2018-12-22 20:09:21.073 [info] <0.315.0>@partisan_config:init:53 Generated UUID: <<134,71,229,192,6,104,17,233,133,148,16,251,182,19,158,22>>, converting to string.
+2018-12-22 20:09:21.073 [info] <0.315.0>@partisan_config:init:56 Generated name for node: '8647e5c0-0668-11e9-8594-10fbb6139e16@127.0.0.1'
+2018-12-22 20:09:21.076 [info] <0.317.0>@partisan_config:get_node_address:187 Resolving "127.0.0.1"...
+2018-12-22 20:09:21.078 [info] <0.317.0>@partisan_config:get_node_address:190 Resolved "8647e5c0-0668-11e9-8594-10fbb6139e16@127.0.0.1" to {127,0,0,1}
+2018-12-22 20:09:21.078 [info] <0.315.0>@partisan_config:get_node_address:207 Resolved "127.0.0.1" to {127,0,0,1}
+2018-12-22 20:09:21.142 [info] <0.315.0>@partisan_sup:init:64 Partisan listening on {127,0,0,1}:33539 listen_addrs: [#{ip => {127,0,0,1},port => 33539}]
+2018-12-22 20:09:21.175 [info] <0.43.0> Application partisan started on node nonode@nohost
+2018-12-22 20:09:21.180 [info] <0.43.0> Application gen_flow started on node nonode@nohost
+2018-12-22 20:09:21.190 [info] <0.43.0> Application sasl started on node nonode@nohost
+2018-12-22 20:09:21.191 [info] <0.43.0> Application time_compat started on node nonode@nohost
+2018-12-22 20:09:21.191 [info] <0.43.0> Application lasp_support started on node nonode@nohost
+2018-12-22 20:09:21.196 [info] <0.43.0> Application plumtree started on node nonode@nohost
+2018-12-22 20:09:21.198 [info] <0.395.0>@lasp_sup:configure_defaults:219 Setting jitter: false
+2018-12-22 20:09:21.202 [info] <0.395.0>@lasp_sup:configure_defaults:224 Setting jitter percent: 1
+2018-12-22 20:09:21.203 [info] <0.395.0>@lasp_sup:configure_defaults:229 Setting tutorial: false
+2018-12-22 20:09:21.205 [info] <0.395.0>@lasp_sup:configure_defaults:234 Setting event interval: 0
+2018-12-22 20:09:21.206 [info] <0.395.0>@lasp_sup:configure_defaults:239 Setting max events: 1000
+2018-12-22 20:09:21.207 [info] <0.395.0>@lasp_sup:configure_defaults:244 Setting extended logging: false
+2018-12-22 20:09:21.209 [info] <0.395.0>@lasp_sup:configure_defaults:249 Setting mailbox logging: false
+2018-12-22 20:09:21.211 [info] <0.395.0>@lasp_sup:configure_defaults:254 Setting operation mode: state_based
+2018-12-22 20:09:21.214 [info] <0.395.0>@lasp_sup:configure_defaults:259 Setting set type: orset
+2018-12-22 20:09:21.218 [info] <0.395.0>@lasp_sup:configure_defaults:272 Setting broadcast: false
+2018-12-22 20:09:21.243 [info] <0.395.0>@lasp_sup:init:88 Membership: false
+2018-12-22 20:09:21.246 [info] <0.395.0>@lasp_sup:init:106 Workflow: false
+2018-12-22 20:09:21.253 [info] <0.395.0>@lasp_sup:advertisement_counter_child_specs:393 AdClientEnabled: false
+2018-12-22 20:09:21.255 [info] <0.395.0>@lasp_sup:advertisement_counter_child_specs:426 AdServerEnabled: false
+2018-12-22 20:09:21.257 [info] <0.395.0>@lasp_sup:game_tournament_child_specs:456 TournClientEnabled: false
+2018-12-22 20:09:21.258 [info] <0.395.0>@lasp_sup:game_tournament_child_specs:475 TournServerEnabled: false
+2018-12-22 20:09:21.260 [info] <0.395.0>@lasp_sup:throughput_child_specs:498 ThroughputType: gset
+2018-12-22 20:09:21.261 [info] <0.395.0>@lasp_sup:throughput_child_specs:506 ThroughputClientEnabled: false
+2018-12-22 20:09:21.263 [info] <0.395.0>@lasp_sup:throughput_child_specs:525 ThroughputServerEnabled: false
+2018-12-22 20:09:21.264 [info] <0.395.0>@lasp_sup:divergence_child_specs:548 DivergenceType: gcounter
+2018-12-22 20:09:21.266 [info] <0.395.0>@lasp_sup:divergence_child_specs:556 DivergenceClientEnabled: false
+2018-12-22 20:09:21.268 [info] <0.395.0>@lasp_sup:divergence_child_specs:575 DivergenceServerEnabled: false
+2018-12-22 20:09:21.287 [info] <0.445.0>@lasp_ets_storage_backend:init:106 Backend initialized with pid: <0.445.0>
+2018-12-22 20:09:21.287 [info] <0.444.0>@lasp_storage_backend:init:121 Backend lasp_ets_storage_backend initialized: <0.445.0>
+2018-12-22 20:09:21.290 [info] <0.43.0> Application lasp started on node nonode@nohost
+2018-12-22 20:09:21.291 [info] <0.43.0> Application file_system started on node nonode@nohost
+2018-12-22 20:09:21.300 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2018-12-22 20:09:21.301 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2018-12-22 20:09:21.302 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2018-12-22 20:09:22.302 [warning] <0.295.0> lager_error_logger_h dropped 110 messages in the last second that exceeded the limit of 50 messages/sec
+2018-12-22 20:09:50.679 [error] <0.630.0> CRASH REPORT Process <0.630.0> with 0 neighbours crashed with reason: #{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"cannot truncate chardata because it contains something that is not valid chardata: {\"i0,1\", \"2\"}">>} in 'Elixir.Logger.Utils':truncate_n/2 line 78
+2018-12-22 20:10:58.549 [error] <0.659.0> CRASH REPORT Process <0.659.0> with 0 neighbours crashed with reason: #{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"cannot truncate chardata because it contains something that is not valid chardata: {\"i0,1\", \"2\"}">>} in 'Elixir.Logger.Utils':truncate_n/2 line 78
+2018-12-22 20:12:11.389 [info] <0.43.0> Application lager started on node nonode@nohost
+2018-12-22 20:12:11.393 [info] <0.43.0> Application types started on node nonode@nohost
+2018-12-22 20:12:11.395 [info] <0.43.0> Application acceptor_pool started on node nonode@nohost
+2018-12-22 20:12:11.396 [info] <0.43.0> Application rand_compat started on node nonode@nohost
+2018-12-22 20:12:11.397 [info] <0.43.0> Application quickrand started on node nonode@nohost
+2018-12-22 20:12:11.397 [info] <0.43.0> Application uuid started on node nonode@nohost
+2018-12-22 20:12:11.400 [info] <0.315.0>@partisan_config:init:50 Distributed Erlang is not enabled, generating UUID.
+2018-12-22 20:12:11.407 [info] <0.315.0>@partisan_config:init:53 Generated UUID: <<235,206,202,198,6,104,17,233,168,230,16,251,182,19,158,22>>, converting to string.
+2018-12-22 20:12:11.407 [info] <0.315.0>@partisan_config:init:56 Generated name for node: 'ebcecac6-0668-11e9-a8e6-10fbb6139e16@127.0.0.1'
+2018-12-22 20:12:11.410 [info] <0.317.0>@partisan_config:get_node_address:187 Resolving "127.0.0.1"...
+2018-12-22 20:12:11.411 [info] <0.317.0>@partisan_config:get_node_address:190 Resolved "ebcecac6-0668-11e9-a8e6-10fbb6139e16@127.0.0.1" to {127,0,0,1}
+2018-12-22 20:12:11.411 [info] <0.315.0>@partisan_config:get_node_address:207 Resolved "127.0.0.1" to {127,0,0,1}
+2018-12-22 20:12:11.465 [info] <0.315.0>@partisan_sup:init:64 Partisan listening on {127,0,0,1}:60409 listen_addrs: [#{ip => {127,0,0,1},port => 60409}]
+2018-12-22 20:12:11.498 [info] <0.43.0> Application partisan started on node nonode@nohost
+2018-12-22 20:12:11.503 [info] <0.43.0> Application gen_flow started on node nonode@nohost
+2018-12-22 20:12:11.513 [info] <0.43.0> Application sasl started on node nonode@nohost
+2018-12-22 20:12:11.514 [info] <0.43.0> Application time_compat started on node nonode@nohost
+2018-12-22 20:12:11.514 [info] <0.43.0> Application lasp_support started on node nonode@nohost
+2018-12-22 20:12:11.520 [info] <0.43.0> Application plumtree started on node nonode@nohost
+2018-12-22 20:12:11.522 [info] <0.395.0>@lasp_sup:configure_defaults:219 Setting jitter: false
+2018-12-22 20:12:11.526 [info] <0.395.0>@lasp_sup:configure_defaults:224 Setting jitter percent: 1
+2018-12-22 20:12:11.527 [info] <0.395.0>@lasp_sup:configure_defaults:229 Setting tutorial: false
+2018-12-22 20:12:11.529 [info] <0.395.0>@lasp_sup:configure_defaults:234 Setting event interval: 0
+2018-12-22 20:12:11.530 [info] <0.395.0>@lasp_sup:configure_defaults:239 Setting max events: 1000
+2018-12-22 20:12:11.532 [info] <0.395.0>@lasp_sup:configure_defaults:244 Setting extended logging: false
+2018-12-22 20:12:11.533 [info] <0.395.0>@lasp_sup:configure_defaults:249 Setting mailbox logging: false
+2018-12-22 20:12:11.535 [info] <0.395.0>@lasp_sup:configure_defaults:254 Setting operation mode: state_based
+2018-12-22 20:12:11.537 [info] <0.395.0>@lasp_sup:configure_defaults:259 Setting set type: orset
+2018-12-22 20:12:11.541 [info] <0.395.0>@lasp_sup:configure_defaults:272 Setting broadcast: false
+2018-12-22 20:12:11.564 [info] <0.395.0>@lasp_sup:init:88 Membership: false
+2018-12-22 20:12:11.565 [info] <0.395.0>@lasp_sup:init:106 Workflow: false
+2018-12-22 20:12:11.573 [info] <0.395.0>@lasp_sup:advertisement_counter_child_specs:393 AdClientEnabled: false
+2018-12-22 20:12:11.575 [info] <0.395.0>@lasp_sup:advertisement_counter_child_specs:426 AdServerEnabled: false
+2018-12-22 20:12:11.577 [info] <0.395.0>@lasp_sup:game_tournament_child_specs:456 TournClientEnabled: false
+2018-12-22 20:12:11.578 [info] <0.395.0>@lasp_sup:game_tournament_child_specs:475 TournServerEnabled: false
+2018-12-22 20:12:11.579 [info] <0.395.0>@lasp_sup:throughput_child_specs:498 ThroughputType: gset
+2018-12-22 20:12:11.581 [info] <0.395.0>@lasp_sup:throughput_child_specs:506 ThroughputClientEnabled: false
+2018-12-22 20:12:11.582 [info] <0.395.0>@lasp_sup:throughput_child_specs:525 ThroughputServerEnabled: false
+2018-12-22 20:12:11.584 [info] <0.395.0>@lasp_sup:divergence_child_specs:548 DivergenceType: gcounter
+2018-12-22 20:12:11.585 [info] <0.395.0>@lasp_sup:divergence_child_specs:556 DivergenceClientEnabled: false
+2018-12-22 20:12:11.587 [info] <0.395.0>@lasp_sup:divergence_child_specs:575 DivergenceServerEnabled: false
+2018-12-22 20:12:11.605 [info] <0.445.0>@lasp_ets_storage_backend:init:106 Backend initialized with pid: <0.445.0>
+2018-12-22 20:12:11.605 [info] <0.444.0>@lasp_storage_backend:init:121 Backend lasp_ets_storage_backend initialized: <0.445.0>
+2018-12-22 20:12:11.607 [info] <0.43.0> Application lasp started on node nonode@nohost
+2018-12-22 20:12:11.609 [info] <0.43.0> Application file_system started on node nonode@nohost
+2018-12-22 20:12:11.616 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2018-12-22 20:12:11.617 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2018-12-22 20:12:11.619 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2018-12-22 20:12:12.280 [warning] <0.295.0> lager_error_logger_h dropped 110 messages in the last second that exceeded the limit of 50 messages/sec
+2018-12-22 20:13:24.712 [info] <0.43.0> Application lager started on node nonode@nohost
+2018-12-22 20:13:24.717 [info] <0.43.0> Application types started on node nonode@nohost
+2018-12-22 20:13:24.718 [info] <0.43.0> Application acceptor_pool started on node nonode@nohost
+2018-12-22 20:13:24.719 [info] <0.43.0> Application rand_compat started on node nonode@nohost
+2018-12-22 20:13:24.721 [info] <0.43.0> Application quickrand started on node nonode@nohost
+2018-12-22 20:13:24.721 [info] <0.43.0> Application uuid started on node nonode@nohost
+2018-12-22 20:13:24.724 [info] <0.315.0>@partisan_config:init:50 Distributed Erlang is not enabled, generating UUID.
+2018-12-22 20:13:24.731 [info] <0.315.0>@partisan_config:init:53 Generated UUID: <<23,131,39,112,6,105,17,233,135,206,16,251,182,19,158,22>>, converting to string.
+2018-12-22 20:13:24.731 [info] <0.315.0>@partisan_config:init:56 Generated name for node: '17832770-0669-11e9-87ce-10fbb6139e16@127.0.0.1'
+2018-12-22 20:13:24.734 [info] <0.317.0>@partisan_config:get_node_address:187 Resolving "127.0.0.1"...
+2018-12-22 20:13:24.736 [info] <0.317.0>@partisan_config:get_node_address:190 Resolved "17832770-0669-11e9-87ce-10fbb6139e16@127.0.0.1" to {127,0,0,1}
+2018-12-22 20:13:24.736 [info] <0.315.0>@partisan_config:get_node_address:207 Resolved "127.0.0.1" to {127,0,0,1}
+2018-12-22 20:13:24.786 [info] <0.315.0>@partisan_sup:init:64 Partisan listening on {127,0,0,1}:37529 listen_addrs: [#{ip => {127,0,0,1},port => 37529}]
+2018-12-22 20:13:24.820 [info] <0.43.0> Application partisan started on node nonode@nohost
+2018-12-22 20:13:24.824 [info] <0.43.0> Application gen_flow started on node nonode@nohost
+2018-12-22 20:13:24.835 [info] <0.43.0> Application sasl started on node nonode@nohost
+2018-12-22 20:13:24.837 [info] <0.43.0> Application time_compat started on node nonode@nohost
+2018-12-22 20:13:24.837 [info] <0.43.0> Application lasp_support started on node nonode@nohost
+2018-12-22 20:13:24.843 [info] <0.43.0> Application plumtree started on node nonode@nohost
+2018-12-22 20:13:24.846 [info] <0.395.0>@lasp_sup:configure_defaults:219 Setting jitter: false
+2018-12-22 20:13:24.849 [info] <0.395.0>@lasp_sup:configure_defaults:224 Setting jitter percent: 1
+2018-12-22 20:13:24.851 [info] <0.395.0>@lasp_sup:configure_defaults:229 Setting tutorial: false
+2018-12-22 20:13:24.852 [info] <0.395.0>@lasp_sup:configure_defaults:234 Setting event interval: 0
+2018-12-22 20:13:24.854 [info] <0.395.0>@lasp_sup:configure_defaults:239 Setting max events: 1000
+2018-12-22 20:13:24.856 [info] <0.395.0>@lasp_sup:configure_defaults:244 Setting extended logging: false
+2018-12-22 20:13:24.857 [info] <0.395.0>@lasp_sup:configure_defaults:249 Setting mailbox logging: false
+2018-12-22 20:13:24.859 [info] <0.395.0>@lasp_sup:configure_defaults:254 Setting operation mode: state_based
+2018-12-22 20:13:24.860 [info] <0.395.0>@lasp_sup:configure_defaults:259 Setting set type: orset
+2018-12-22 20:13:24.864 [info] <0.395.0>@lasp_sup:configure_defaults:272 Setting broadcast: false
+2018-12-22 20:13:24.890 [info] <0.395.0>@lasp_sup:init:88 Membership: false
+2018-12-22 20:13:24.891 [info] <0.395.0>@lasp_sup:init:106 Workflow: false
+2018-12-22 20:13:24.898 [info] <0.395.0>@lasp_sup:advertisement_counter_child_specs:393 AdClientEnabled: false
+2018-12-22 20:13:24.901 [info] <0.395.0>@lasp_sup:advertisement_counter_child_specs:426 AdServerEnabled: false
+2018-12-22 20:13:24.903 [info] <0.395.0>@lasp_sup:game_tournament_child_specs:456 TournClientEnabled: false
+2018-12-22 20:13:24.904 [info] <0.395.0>@lasp_sup:game_tournament_child_specs:475 TournServerEnabled: false
+2018-12-22 20:13:24.906 [info] <0.395.0>@lasp_sup:throughput_child_specs:498 ThroughputType: gset
+2018-12-22 20:13:24.907 [info] <0.395.0>@lasp_sup:throughput_child_specs:506 ThroughputClientEnabled: false
+2018-12-22 20:13:24.908 [info] <0.395.0>@lasp_sup:throughput_child_specs:525 ThroughputServerEnabled: false
+2018-12-22 20:13:24.910 [info] <0.395.0>@lasp_sup:divergence_child_specs:548 DivergenceType: gcounter
+2018-12-22 20:13:24.912 [info] <0.395.0>@lasp_sup:divergence_child_specs:556 DivergenceClientEnabled: false
+2018-12-22 20:13:24.915 [info] <0.395.0>@lasp_sup:divergence_child_specs:575 DivergenceServerEnabled: false
+2018-12-22 20:13:24.929 [info] <0.445.0>@lasp_ets_storage_backend:init:106 Backend initialized with pid: <0.445.0>
+2018-12-22 20:13:24.929 [info] <0.444.0>@lasp_storage_backend:init:121 Backend lasp_ets_storage_backend initialized: <0.445.0>
+2018-12-22 20:13:24.932 [info] <0.43.0> Application lasp started on node nonode@nohost
+2018-12-22 20:13:24.934 [info] <0.43.0> Application file_system started on node nonode@nohost
+2018-12-22 20:13:24.943 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2018-12-22 20:13:24.944 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2018-12-22 20:13:24.946 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2018-12-22 20:13:25.006 [warning] <0.295.0> lager_error_logger_h dropped 108 messages in the last second that exceeded the limit of 50 messages/sec
+2018-12-22 20:13:25.006 [info] <0.43.0> Application websheets started on node nonode@nohost
+2018-12-22 20:20:41.967 [info] <0.43.0> Application lager started on node nonode@nohost
+2018-12-22 20:20:41.972 [info] <0.43.0> Application types started on node nonode@nohost
+2018-12-22 20:20:41.973 [info] <0.43.0> Application acceptor_pool started on node nonode@nohost
+2018-12-22 20:20:41.974 [info] <0.43.0> Application rand_compat started on node nonode@nohost
+2018-12-22 20:20:41.975 [info] <0.43.0> Application quickrand started on node nonode@nohost
+2018-12-22 20:20:41.975 [info] <0.43.0> Application uuid started on node nonode@nohost
+2018-12-22 20:20:41.977 [info] <0.297.0>@partisan_config:init:50 Distributed Erlang is not enabled, generating UUID.
+2018-12-22 20:20:41.984 [info] <0.297.0>@partisan_config:init:53 Generated UUID: <<28,34,172,60,6,106,17,233,173,122,16,251,56,94,48,220>>, converting to string.
+2018-12-22 20:20:41.984 [info] <0.297.0>@partisan_config:init:56 Generated name for node: '1c22ac3c-066a-11e9-ad7a-10fb385e30dc@127.0.0.1'
+2018-12-22 20:20:41.987 [info] <0.299.0>@partisan_config:get_node_address:187 Resolving "127.0.0.1"...
+2018-12-22 20:20:41.989 [info] <0.299.0>@partisan_config:get_node_address:190 Resolved "1c22ac3c-066a-11e9-ad7a-10fb385e30dc@127.0.0.1" to {127,0,0,1}
+2018-12-22 20:20:41.989 [info] <0.297.0>@partisan_config:get_node_address:207 Resolved "127.0.0.1" to {127,0,0,1}
+2018-12-22 20:20:42.042 [info] <0.297.0>@partisan_sup:init:64 Partisan listening on {127,0,0,1}:34883 listen_addrs: [#{ip => {127,0,0,1},port => 34883}]
+2018-12-22 20:20:42.074 [info] <0.43.0> Application partisan started on node nonode@nohost
+2018-12-22 20:20:42.078 [info] <0.43.0> Application gen_flow started on node nonode@nohost
+2018-12-22 20:20:42.089 [info] <0.43.0> Application sasl started on node nonode@nohost
+2018-12-22 20:20:42.090 [info] <0.43.0> Application time_compat started on node nonode@nohost
+2018-12-22 20:20:42.090 [info] <0.43.0> Application lasp_support started on node nonode@nohost
+2018-12-22 20:20:42.095 [info] <0.43.0> Application plumtree started on node nonode@nohost
+2018-12-22 20:20:42.098 [info] <0.377.0>@lasp_sup:configure_defaults:219 Setting jitter: false
+2018-12-22 20:20:42.101 [info] <0.377.0>@lasp_sup:configure_defaults:224 Setting jitter percent: 1
+2018-12-22 20:20:42.103 [info] <0.377.0>@lasp_sup:configure_defaults:229 Setting tutorial: false
+2018-12-22 20:20:42.104 [info] <0.377.0>@lasp_sup:configure_defaults:234 Setting event interval: 0
+2018-12-22 20:20:42.105 [info] <0.377.0>@lasp_sup:configure_defaults:239 Setting max events: 1000
+2018-12-22 20:20:42.107 [info] <0.377.0>@lasp_sup:configure_defaults:244 Setting extended logging: false
+2018-12-22 20:20:42.108 [info] <0.377.0>@lasp_sup:configure_defaults:249 Setting mailbox logging: false
+2018-12-22 20:20:42.109 [info] <0.377.0>@lasp_sup:configure_defaults:254 Setting operation mode: state_based
+2018-12-22 20:20:42.111 [info] <0.377.0>@lasp_sup:configure_defaults:259 Setting set type: orset
+2018-12-22 20:20:42.114 [info] <0.377.0>@lasp_sup:configure_defaults:272 Setting broadcast: false
+2018-12-22 20:20:42.142 [info] <0.377.0>@lasp_sup:init:88 Membership: false
+2018-12-22 20:20:42.143 [info] <0.377.0>@lasp_sup:init:106 Workflow: false
+2018-12-22 20:20:42.153 [info] <0.377.0>@lasp_sup:advertisement_counter_child_specs:393 AdClientEnabled: false
+2018-12-22 20:20:42.156 [info] <0.377.0>@lasp_sup:advertisement_counter_child_specs:426 AdServerEnabled: false
+2018-12-22 20:20:42.157 [info] <0.377.0>@lasp_sup:game_tournament_child_specs:456 TournClientEnabled: false
+2018-12-22 20:20:42.159 [info] <0.377.0>@lasp_sup:game_tournament_child_specs:475 TournServerEnabled: false
+2018-12-22 20:20:42.161 [info] <0.377.0>@lasp_sup:throughput_child_specs:498 ThroughputType: gset
+2018-12-22 20:20:42.162 [info] <0.377.0>@lasp_sup:throughput_child_specs:506 ThroughputClientEnabled: false
+2018-12-22 20:20:42.164 [info] <0.377.0>@lasp_sup:throughput_child_specs:525 ThroughputServerEnabled: false
+2018-12-22 20:20:42.166 [info] <0.377.0>@lasp_sup:divergence_child_specs:548 DivergenceType: gcounter
+2018-12-22 20:20:42.168 [info] <0.377.0>@lasp_sup:divergence_child_specs:556 DivergenceClientEnabled: false
+2018-12-22 20:20:42.170 [info] <0.377.0>@lasp_sup:divergence_child_specs:575 DivergenceServerEnabled: false
+2018-12-22 20:20:42.188 [info] <0.427.0>@lasp_ets_storage_backend:init:106 Backend initialized with pid: <0.427.0>
+2018-12-22 20:20:42.188 [info] <0.426.0>@lasp_storage_backend:init:121 Backend lasp_ets_storage_backend initialized: <0.427.0>
+2018-12-22 20:20:42.191 [info] <0.43.0> Application lasp started on node nonode@nohost
+2018-12-22 20:20:42.192 [info] <0.43.0> Application file_system started on node nonode@nohost
+2018-12-22 20:20:42.205 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2018-12-22 20:20:42.206 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2018-12-22 20:20:42.207 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2018-12-22 20:20:43.213 [warning] <0.277.0> lager_error_logger_h dropped 97 messages in the last second that exceeded the limit of 50 messages/sec

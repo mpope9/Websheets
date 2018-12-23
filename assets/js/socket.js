@@ -24,7 +24,15 @@ function createChannel(spreadsheetId) {
   channel = socket.channel("spreadsheet:" + spreadsheetId, {})
   channel.on("server_update", handle_server_update)
   channel.join()
-    .receive("ok", resp => { console.log("Joined successfully", resp) })
+    .receive("ok", resp => { console.log("Joined successfully") 
+      resp.forEach(function(element) {
+        // TODO: actually json this shit.
+        let input_id = element[0]
+        let value = element[1]
+        let input = document.getElementById(input_id)
+        input.value = value
+      });
+    })
     .receive("error", resp => { console.log("Unable to join", resp) })
 }
 

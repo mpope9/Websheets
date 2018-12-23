@@ -2,6 +2,19 @@ defmodule ClientUpdate do
   defstruct [:body, :input_id, :table_id]
 end
 
+# TODO: move to own file
+defmodule TableEncoder do
+  alias Poison.Encoder
+
+  defimpl Encoder, for: Tuple do
+    def encode(data, options) when is_tuple(data) do
+      data
+      |> Tuple.to_list()
+      |> Encoder.List.encode(options)
+    end
+  end
+end
+
 defmodule WebsheetsWeb.UpdateChannel do
   use Phoenix.Channel
   require Logger
@@ -11,8 +24,8 @@ defmodule WebsheetsWeb.UpdateChannel do
 
   def join("spreadsheet:" <> spreadsheet_id, _message, socket) do
     Logger.info "Recieved connection for table: #{spreadsheet_id}"
-    ## TODO: send current status to connected client.
-    {:ok, socket}
+    {:ok, values} = :lasp.query({<< "#{spreadsheet_id}" >>, @gmap_type})
+    {:ok, values, socket}
   end
 
   @spec handle_in(String.t, ClientUpdate.t, Phoenix.Socket.t) :: {atom, Phoenix.Socket.t}
