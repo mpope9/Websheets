@@ -20,7 +20,9 @@ defmodule WebsheetsWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", WebsheetsWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", WebsheetsWeb do
+    pipe_through :api
+
+    get "/create", LaspController, :create
+  end
 end

@@ -1,3 +1,15 @@
+<div>
+  <div>
+    <button class="button" id="join_button">Join Spreadsheet</button>
+    <input class="join_input" id="join_input" type="text"></input>
+  </div>
+
+  <button class="button" id="create_button">Create New Sheet</button>
+
+  <p>Current Sheet ID:</p>
+  <p id="spreadsheet_id_display"></p>
+</div>
+
 <div class="jumbotron">
   <table>
     <%= raw generate_header() %>

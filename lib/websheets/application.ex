@@ -9,13 +9,10 @@ defmodule Websheets.Application do
     # Define workers and child supervisors to be supervised
     children = [
       # Start the endpoint when the application starts
-      supervisor(WebsheetsWeb.Endpoint, []),
-      # Start your own worker by calling: Websheets.Worker.start_link(arg1, arg2, arg3)
-      # worker(Websheets.Worker, [arg1, arg2, arg3]),
+      supervisor(WebsheetsWeb.Endpoint, [])
     ]
 
-    # TODO worker?
-    #:lasp.start_link()
+    #create_database()
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
@@ -28,5 +25,12 @@ defmodule Websheets.Application do
   def config_change(changed, _new, removed) do
     WebsheetsWeb.Endpoint.config_change(changed, removed)
     :ok
+  end
+
+  # TODO: make this more robust?
+  def create_database() do
+    :mnesia.create_schema([node()])
+    :mnesia.start()
+    :mnesia.create_table(:lasp_table, [attributes: [:table_id, :table]])
   end
 end
