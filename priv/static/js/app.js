@@ -1712,7 +1712,14 @@ function createChannel(spreadsheetId) {
   channel = socket.channel("spreadsheet:" + spreadsheetId, {});
   channel.on("server_update", handle_server_update);
   channel.join().receive("ok", function (resp) {
-    console.log("Joined successfully", resp);
+    console.log("Joined successfully");
+    resp.forEach(function (element) {
+      // TODO: actually json this shit.
+      var input_id = element[0];
+      var value = element[1];
+      var input = document.getElementById(input_id);
+      input.value = value;
+    });
   }).receive("error", function (resp) {
     console.log("Unable to join", resp);
   });
